@@ -5,31 +5,33 @@ function ProductCard({ image, title, price, rating, reviews, shades }) {
   return (
     <Box
       style={{
-        width: "280.44px",
+        width: "290.44px",
         height: "222",
         marginTop:"25px",
+        padding:"10px",
         backgroundColor:"white",
         borderRadius:"10px",
-        boxShadow:"rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"
+        boxShadow:"rgba(0, 0, 0, 0.24) 0px 3px 8px"
       }}
     >
-      <Box paddingLeft="60px">
+      <Box paddingLeft="60px" >
         <img
           src={image}
           alt="ProductImage"
           width={"160px"}
           display="inline-block"
           height={"222px"}
+          border-radius="12px"
         />
       </Box>
       <Box>
-        <Box>
-          <p>{title}</p>
+        <Box fontSize={".8rem"}>
+          <p height="42px">{title}</p>
         </Box>
-        <Box>
+        <Box height={"18px"} fontSize={"14px"}>
           <span>{shades} shades</span>
         </Box>
-        <Box>
+        <Box fontSize={"18px"} fontWeight="700">
           <p>₹ {price}</p>
         </Box>
       </Box>

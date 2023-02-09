@@ -13,7 +13,7 @@ function ProductListPage() {
     fetch(`http://localhost:3001/posts`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data[0].products);
+        console.log(data);
         setData(data[0].products);
       });
   };
