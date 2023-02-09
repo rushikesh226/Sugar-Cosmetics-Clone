@@ -1,31 +1,36 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-function ProductCard() {
+import { Link } from "react-router-dom";
+function ProductCard({ image, title, price, rating, reviews, shades }) {
   return (
     <Box
       style={{
         width: "280.44px",
         height: "222",
-        margin: "auto",
+        marginTop:"25px",
+        backgroundColor:"white",
+        borderRadius:"10px",
+        boxShadow:"rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"
       }}
     >
-      <Box>
+      <Box paddingLeft="60px">
         <img
-          src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg%3Fv%3D1644394232&w=256&q=75"
+          src={image}
           alt="ProductImage"
           width={"160px"}
+          display="inline-block"
           height={"222px"}
         />
       </Box>
       <Box>
         <Box>
-          <p>Matt As Hell Crayon Lipstick</p>
+          <p>{title}</p>
         </Box>
         <Box>
-          <span>32 shades</span>
+          <span>{shades} shades</span>
         </Box>
         <Box>
-          <p>₹ 899</p>
+          <p>₹ {price}</p>
         </Box>
       </Box>
       <Box
@@ -51,24 +56,23 @@ function ProductCard() {
         >
           <Box style={{ alignItems: "center" }}>
             <span
-              class=""
               style={{
                 fontSize: "14px",
               }}
             >
-              4.8
+              {rating}
             </span>
           </Box>
-          <Box style={{ fontSize: "14px" }}>(645)</Box>
+          <Box style={{ fontSize: "14px" }}>{`(${reviews})`}</Box>
         </Box>
       </Box>
-      <Box style={{ display: "flex"}}>
+      <Box style={{ display: "flex",marginTop:"10px" }}>
         <Box
           style={{
             cursor: "pointer",
             boxSizing: "border-box",
             display: "block",
-            margin:"auto"
+            margin: "auto",
           }}
         >
           <svg
@@ -95,22 +99,22 @@ function ProductCard() {
             alignItems: "center",
             maxWidth: "222px",
             width: "100%",
-            height: "44px",
+            height: "44px"
           }}
         >
-          <a href="/" style={{ height: "100%", width: "100%" }}>
+          <Link to="/" style={{ height: "100%", width: "100%" }}>
             <button
               style={{
                 color: "white",
                 backgroundColor: "black",
                 height: "100%",
                 width: "100%",
-                borderRadius:"10px"
+                borderRadius: "10px",
               }}
             >
               ADD TO CART
             </button>
-          </a>
+          </Link>
         </Box>
       </Box>
     </Box>
