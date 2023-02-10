@@ -32,7 +32,7 @@ function Filters() {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4} onChange={handleSortValue}>
-            <RadioGroup defaultValue="2">
+            <RadioGroup defaultValue="Relevance">
               <Stack spacing={5} direction="column">
                 <Radio colorScheme="gray" value="Relevance" defaultChecked>
                   Relevance
