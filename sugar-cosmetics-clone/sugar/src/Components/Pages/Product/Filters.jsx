@@ -11,13 +11,25 @@ import {
   CheckboxGroup,
   Checkbox,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useContext } from "react";
 import { useState } from "react";
+import { SortContext } from "../../Context/SortContext";
 function Filters() {
+  const {handleSort}=useContext(SortContext);
   const [sortValue, setSortValue] = useState("Relevance");
   const handleSortValue = (e) => {
     setSortValue(e.target.value);
+    if(e.target.value==="Relevance"){
+      handleSort("posts");
+    }
+    else if(e.target.value==="Price: High To Low"){
+      handleSort("htl");
+    }
+    else if(e.target.value==="Price: Low To High"){
+      handleSort("lth");
+    }
   };
+  
   return (
     <Box width={"100%"} marginTop="25px">
       <Accordion allowToggle>

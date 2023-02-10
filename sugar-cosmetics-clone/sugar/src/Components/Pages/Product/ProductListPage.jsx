@@ -1,20 +1,21 @@
 import { Box } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { useState } from "react";
+import { SortContext } from "../../Context/SortContext";
 import Filters from "./Filters";
 import ProductCard from "./ProductCard";
 
 function ProductListPage() {
   const [data, setData] = useState([]);
+  const { sort } = useContext(SortContext);
   useEffect(() => {
     getData();
-  }, []);
+  }, [sort]);
   const getData = () => {
-    fetch(`http://localhost:3001/posts`)
+    fetch(`http://localhost:3001/${sort}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        setData(data[0].products);
+        setData(data);
       });
   };
   return (
