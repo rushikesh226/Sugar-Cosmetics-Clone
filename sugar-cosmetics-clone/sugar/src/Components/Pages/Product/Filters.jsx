@@ -15,21 +15,29 @@ import React, { useContext } from "react";
 import { useState } from "react";
 import { SortContext } from "../../Context/SortContext";
 function Filters() {
-  const {handleSort}=useContext(SortContext);
+  const { handleSort } = useContext(SortContext);
   const [sortValue, setSortValue] = useState("Relevance");
   const handleSortValue = (e) => {
     setSortValue(e.target.value);
-    if(e.target.value==="Relevance"){
+    if (e.target.value === "Relevance") {
       handleSort("posts");
-    }
-    else if(e.target.value==="Price: High To Low"){
+    } else if (e.target.value === "Price: High To Low") {
       handleSort("htl");
-    }
-    else if(e.target.value==="Price: Low To High"){
+    } else if (e.target.value === "Price: Low To High") {
       handleSort("lth");
     }
   };
-  
+  const handleProductType = (e) => {
+    console.log(e.target.value);
+    if (e.target.value === "Crayon Lipstick") {
+      handleSort("crayonLips");
+    }
+    if (e.target.value === "Liquid Lipstick") {
+      handleSort("liquidLips");
+    } else if (e.target.value === "Matte Lipstick") {
+      handleSort("matteLips");
+    }
+  };
   return (
     <Box width={"100%"} marginTop="25px">
       <Accordion allowToggle>
@@ -83,10 +91,8 @@ function Filters() {
               <AccordionIcon />
             </AccordionButton>
           </h2>
-          <AccordionPanel pb={4} >
-            <CheckboxGroup
-              colorScheme="gray"
-            >
+          <AccordionPanel pb={4} onChange={handleProductType}>
+            <CheckboxGroup colorScheme="gray">
               <Stack spacing={[1, 5]} direction={["column"]}>
                 <Checkbox value="Crayon Lipstick">Crayon Lipstick</Checkbox>
                 <Checkbox value="Liquid Lipstick">Liquid Lipstick</Checkbox>
@@ -106,10 +112,8 @@ function Filters() {
               <AccordionIcon />
             </AccordionButton>
           </h2>
-          <AccordionPanel pb={4} >
-            <CheckboxGroup
-              colorScheme="gray"
-            >
+          <AccordionPanel pb={4}>
+            <CheckboxGroup colorScheme="gray">
               <Stack spacing={[1, 5]} direction={["column"]}>
                 <Checkbox value="crayon">Crayon</Checkbox>
                 <Checkbox value="Long Lasting">Long Lasting</Checkbox>
@@ -135,11 +139,9 @@ function Filters() {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <CheckboxGroup
-              colorScheme="gray"
-            >
+            <CheckboxGroup colorScheme="gray">
               <Stack spacing={[1, 5]} direction={["column"]}>
-              <Checkbox value="Matte">Matte</Checkbox>
+                <Checkbox value="Matte">Matte</Checkbox>
                 <Checkbox value="Metallic">Metallic</Checkbox>
               </Stack>
             </CheckboxGroup>
@@ -156,12 +158,10 @@ function Filters() {
               <AccordionIcon />
             </AccordionButton>
           </h2>
-          <AccordionPanel pb={4} >
-            <CheckboxGroup
-              colorScheme="gray"
-            >
+          <AccordionPanel pb={4}>
+            <CheckboxGroup colorScheme="gray">
               <Stack spacing={[1, 5]} direction={["column"]}>
-              <Checkbox value="Crayon">Crayon</Checkbox>
+                <Checkbox value="Crayon">Crayon</Checkbox>
                 <Checkbox value="Liquid">Liquid</Checkbox>
                 <Checkbox value="Bullet">Bullet</Checkbox>
               </Stack>
@@ -179,12 +179,10 @@ function Filters() {
               <AccordionIcon />
             </AccordionButton>
           </h2>
-          <AccordionPanel pb={4} >
-            <CheckboxGroup
-              colorScheme="gray"
-            >
+          <AccordionPanel pb={4}>
+            <CheckboxGroup colorScheme="gray">
               <Stack spacing={[1, 5]} direction={["column"]}>
-              <Checkbox value="Reds And Oranges">Reds And Oranges</Checkbox>
+                <Checkbox value="Reds And Oranges">Reds And Oranges</Checkbox>
               </Stack>
             </CheckboxGroup>
           </AccordionPanel>
