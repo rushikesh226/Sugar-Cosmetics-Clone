@@ -5,13 +5,16 @@ const initState = {
     isError: false,
     isLoading: false,
 };
-const cartReducer = (state = initState, { type, payload }) => {
-    if (type === ADD_TO_CART) {
-        return {
-            ...state,
-            cart: [...state.cart, payload],
-        };
+export const cartReducer = (state = initState, { type, payload }) => {
+    switch(type){
+        case ADD_TO_CART :{
+            return {
+                ...state,
+                cart:[...state.cart,payload]
+            }
+        }
+        default:{
+            return state;
+        }
     }
-
-    return state;
 };
