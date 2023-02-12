@@ -6,16 +6,20 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import SortContextProvider from "./Components/Context/SortContext";
+import { Provider } from "react-redux";
+import { store } from "./Components/Redux/store";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ChakraProvider>
-      <BrowserRouter>
-        <SortContextProvider>
-          <App />
-        </SortContextProvider>
-      </BrowserRouter>
-    </ChakraProvider>
+    <Provider store={store}>
+      <ChakraProvider>
+        <BrowserRouter>
+          <SortContextProvider>
+            <App />
+          </SortContextProvider>
+        </BrowserRouter>
+      </ChakraProvider>
+    </Provider>
   </React.StrictMode>
 );
 

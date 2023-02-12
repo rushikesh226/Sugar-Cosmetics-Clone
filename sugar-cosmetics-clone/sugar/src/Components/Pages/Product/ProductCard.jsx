@@ -1,20 +1,33 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import {useDispatch} from "react-redux";
+import { addToCart } from "../../Redux/action";
 function ProductCard({ image, title, price, rating, reviews, shades }) {
+  const cartObj={
+    image,
+    title,
+    price,
+    rating,
+    reviews,
+    shades
+  }
+  const dispatch=useDispatch();
+  const productAddToCart = () => {
+    dispatch(addToCart(cartObj));
+  };
   return (
     <Box
       style={{
         width: "290.44px",
         height: "222",
-        marginTop:"25px",
-        padding:"10px",
-        backgroundColor:"white",
-        borderRadius:"10px",
-        boxShadow:"rgba(0, 0, 0, 0.24) 0px 3px 8px"
+        marginTop: "25px",
+        padding: "10px",
+        backgroundColor: "white",
+        borderRadius: "10px",
+        boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
       }}
     >
-      <Box paddingLeft="60px" >
+      <Box paddingLeft="60px">
         <img
           src={image}
           alt="ProductImage"
@@ -68,7 +81,7 @@ function ProductCard({ image, title, price, rating, reviews, shades }) {
           <Box style={{ fontSize: "14px" }}>{`(${reviews})`}</Box>
         </Box>
       </Box>
-      <Box style={{ display: "flex",marginTop:"10px" }}>
+      <Box style={{ display: "flex", marginTop: "10px" }}>
         <Box
           style={{
             cursor: "pointer",
@@ -101,10 +114,10 @@ function ProductCard({ image, title, price, rating, reviews, shades }) {
             alignItems: "center",
             maxWidth: "222px",
             width: "100%",
-            height: "44px"
+            height: "44px",
           }}
         >
-          <Link to="/" style={{ height: "100%", width: "100%" }}>
+          <Box style={{ height: "100%", width: "100%" }}>
             <button
               style={{
                 color: "white",
@@ -113,10 +126,11 @@ function ProductCard({ image, title, price, rating, reviews, shades }) {
                 width: "100%",
                 borderRadius: "10px",
               }}
+              onClick={productAddToCart}
             >
               ADD TO CART
             </button>
-          </Link>
+          </Box>
         </Box>
       </Box>
     </Box>
