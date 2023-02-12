@@ -5,7 +5,7 @@ const initState = {
     isError: false,
     isLoading: false,
 };
-const wishlistReducer = (state = initState, { type, payload }) => {
+export const wishlistReducer = (state = initState, { type, payload }) => {
     if (type === ADD_TO_WISHLIST) {
         return {
             ...state,
