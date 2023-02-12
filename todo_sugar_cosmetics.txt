@@ -1,0 +1,23 @@
+product page
+	bottom div faded add to cart - on scroll
+	add to cart functionality - redux add to cart array - use this to populate cart + end point page
+	wishlist functionnality - redux wishlist array - use this to populate wishlist
+
+cart page 
+	total 
+	+ cart products with quanatity 
+	+ hardcoded offers 
+
+Navbar
+	global search functionality 
+	drop down divs 
+
+end point page 
+	card details 
+	cart products 
+	total
+
+wishlist page 
+	show wishlisted products 
+	 
+	
