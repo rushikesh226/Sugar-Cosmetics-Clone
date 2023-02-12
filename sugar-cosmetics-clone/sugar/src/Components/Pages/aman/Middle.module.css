@@ -1,0 +1,28 @@
+
+.sliding_images_box{
+    
+}   
+
+:root {
+    --start-margin : 100%;
+    --end-margin : 0;
+}
+
+.sliding_images{
+
+    animation-duration: 1s;
+    animation-name: slidein;
+
+}
+
+@keyframes slidein {
+    from {
+      margin-left: var(--start-margin);
+ 
+    }
+  
+    to {
+      margin-left: var(--end-margin);
+    }
+  }
+
