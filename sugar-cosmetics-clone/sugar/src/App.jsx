@@ -1,9 +1,9 @@
 import "./App.css";
-import ProductListPage from "./Components/Pages/Product/ProductListPage";
+import AllRoutes from "./Components/AllRoutes/AllRoutes"
 function App() {
   return (
     <div className="App">
-      
+      <AllRoutes/>
     </div>
   );
 }
