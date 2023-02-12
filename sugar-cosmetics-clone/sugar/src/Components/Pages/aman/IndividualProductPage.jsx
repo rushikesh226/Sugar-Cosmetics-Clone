@@ -1,4 +1,6 @@
 import "./ProductPage.css";
+import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
 import { IoIosArrowForward } from "react-icons/io";
 import { BsShare } from "react-icons/bs";
 import { FiHeart } from "react-icons/fi";
@@ -119,7 +121,8 @@ export default function IndividualProductPage() {
         <div>
             {/* navbar begins  */}
 
-            <div
+            <Navbar />
+            {/* <div
                 style={{
                     backgroundColor: "black",
                     height: "130px",
@@ -128,7 +131,7 @@ export default function IndividualProductPage() {
                     left: "0px",
                     zIndex: "1000",
                 }}
-            ></div>
+            ></div> */}
 
             {/* navbar ends  */}
 
@@ -568,6 +571,8 @@ export default function IndividualProductPage() {
                     </div>
                 </div>
             </div>
+
+            <Footer />
         </div>
     );
 }
