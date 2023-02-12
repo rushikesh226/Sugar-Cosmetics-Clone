@@ -7,15 +7,18 @@ import ProductCard from "./ProductCard";
 
 function ProductListPage() {
   const [data, setData] = useState([]);
+  const [isLoading,setIsLoading]=useState(false);
   const { sort } = useContext(SortContext);
   useEffect(() => {
     getData();
   }, [sort]);
   const getData = () => {
+    setIsLoading(true);
     fetch(`http://localhost:3001/${sort}`)
       .then((res) => res.json())
       .then((data) => {
         setData(data);
+        setIsLoading(false);
       });
   };
   return (
