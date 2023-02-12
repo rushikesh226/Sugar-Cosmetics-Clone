@@ -21,9 +21,10 @@ export function DropDownBox({ contents, left_offset }) {
                 textTransform: "uppercase",
             }}
         >
-            {contents.map((elem) => {
+            {contents.map((elem, index) => {
                 return (
                     <div
+                        key={index}
                         style={{
                             width: "200px",
                             textAlign: "left",
