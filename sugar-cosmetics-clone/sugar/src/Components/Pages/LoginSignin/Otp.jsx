@@ -17,28 +17,31 @@ import {
   useDisclosure,
   Text,
 } from "@chakra-ui/react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addUser } from "../../Redux/action";
 
 const Otp = () => {
   const [username, setUserName] = useState("");
   const [validate, setValidate] = useState(false);
-  const navigator = useNavigate()
+  const navigator = useNavigate();
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const dispatch = useDispatch();
   function handleName(e) {
     setUserName(e.target.value);
+    dispatch(addUser(username));
   }
   const handleSubmit = () => {
-    if(username === '1234'){
-      setValidate(true)
+    if (username === "1234") {
+      setValidate(true);
       // alert("Your are login Success!");
-      onOpen()
+      onOpen();
     } else {
       alert("Already logged in");
     }
   };
 
   const handleReset = () => {};
-  
 
   function BasicUsage() {
     return (
@@ -66,13 +69,18 @@ const Otp = () => {
               </ModalBody>
 
               <ModalFooter>
-                <a href="/">
-                <Button mr={3} bg="black" color="white" onClick={() => {
-                  navigator('/')
-                }}>
-                  Sign Me Up
-                </Button>
-                </a>
+                <Link to="/">
+                  <Button
+                    mr={3}
+                    bg="black"
+                    color="white"
+                    onClick={() => {
+                      navigator("/");
+                    }}
+                  >
+                    Sign Me Up
+                  </Button>
+                </Link>
 
                 <Button mr={3} bg="white" color="black" onClick={onClose}>
                   Close
@@ -129,18 +137,18 @@ const Otp = () => {
               Resend now <Timer />
             </span>
           </p>
-          <br/>
+          <br />
           Registering for this site allows you to access your order status and
           history. Just fill in the above fields, and we'll get a new account
           set up for you in no time. We will only ask you for information
           necessary to make the purchase process faster and easier.
         </div>
         <div>
-        <br/>
-        <br/>
+          <br />
+          <br />
 
-          <button className={styles.otp_btn} onClick={ () =>  handleSubmit()}>
-            { "Validate"}
+          <button className={styles.otp_btn} onClick={() => handleSubmit()}>
+            {"Validate"}
           </button>
         </div>
         <hr className={styles.dotted_line} />
