@@ -224,7 +224,10 @@ let Navbar = () => {
                             border="3px solild white"
                         />
                     </div>
-                    <div className="navbar_end_icons_cart">
+                    <div
+                        className="navbar_end_icons_cart"
+                        onClick={() => navigate("/cart")}
+                    >
                         <BsBag
                             color="white"
                             size="20"
