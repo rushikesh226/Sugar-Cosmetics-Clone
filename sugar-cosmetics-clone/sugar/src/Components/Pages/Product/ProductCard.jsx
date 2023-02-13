@@ -13,8 +13,8 @@ function ProductCard({ image, title, price, rating, reviews, shades }) {
     reviews,
     shades,
   };
-  const [cartText,setCartText]=useState("ADD TO CART");
-  const [cartColor,setCartColor]=useState("black");
+  const [cartText, setCartText] = useState("ADD TO CART");
+  const [cartColor, setCartColor] = useState("black");
   const toast = useToast();
   const dispatch = useDispatch();
   const productAddToCart = () => {
@@ -22,7 +22,7 @@ function ProductCard({ image, title, price, rating, reviews, shades }) {
     toast({
       title: "Item Added To Cart",
       status: "success",
-      duration: 5000,
+      duration: 3000,
       isClosable: true,
     });
     setCartText("ADDED TO CART");
@@ -54,7 +54,7 @@ function ProductCard({ image, title, price, rating, reviews, shades }) {
       </Box>
       <Box>
         <Box fontSize={".8rem"}>
-          <p height="42px">{title}</p>
+          <p height="82px">{title}</p>
         </Box>
         <Box height={"18px"} fontSize={"14px"}>
           <span>{shades} shades</span>
@@ -136,7 +136,7 @@ function ProductCard({ image, title, price, rating, reviews, shades }) {
             <button
               style={{
                 color: "white",
-                backgroundColor:`${cartColor}`,
+                backgroundColor: `${cartColor}`,
                 height: "100%",
                 width: "100%",
                 borderRadius: "10px",
