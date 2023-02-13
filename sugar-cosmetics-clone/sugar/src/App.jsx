@@ -1,4 +1,3 @@
-import "./App.css";
 import AllRoutes from "./Components/AllRoutes/AllRoutes";
 import { Navbar } from "./Components/Pages/aman/Navbar";
 import { Footer } from "./Components/Pages/aman/Footer";
