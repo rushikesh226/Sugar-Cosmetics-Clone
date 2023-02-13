@@ -1,21 +1,56 @@
 import { useSelector } from "react-redux";
 import "./PaymentPage.css";
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+import {
+    Tabs,
+    TabList,
+    TabPanels,
+    Tab,
+    TabPanel,
+    useToast,
+} from "@chakra-ui/react";
 import { BsFillCreditCardFill } from "react-icons/bs";
 import { SiMastercard, SiAmericanexpress } from "react-icons/si";
 import { SlPaypal } from "react-icons/sl";
 import { RiVisaLine } from "react-icons/ri";
+import { MdDelete } from "react-icons/md";
+import { useState } from "react";
+import { useNavigate } from "react-router";
+import { PaymentPopover } from "../aman/Success_Popover";
 
 export const PaymentPage = () => {
-    let cart_products = useSelector((store) => store.cartReducer.cart);
+    const navigate = useNavigate();
+    const [paymentState, setPaymentState] = useState(false);
+
+    let cart_arr = useSelector((store) => store.cartReducer.cart);
+
+    let [cardDetails, setCardDetails] = useState({
+        card_num: "",
+        card_name: "",
+        card_cvv: "",
+        card_exp: "",
+    });
 
     let total = 0;
-    // calulcate totoal of all products
-    // total = cart_products.reduce((acc, current) => {
-    //     return acc + current;
-    // }, 0);
+    total = cart_arr.reduce((acc, current) => {
+        return acc + +current.price;
+    }, 0);
 
-    console.log(cart_products, "cart products -------------------------------");
+    console.log(total, "thisis toal");
+
+    const toast = useToast();
+    let handleClick = () => {
+        toast({
+            title: "Your Order Number : 231 is placed",
+            status: "success",
+            duration: 3000,
+            isClosable: true,
+        });
+
+        setTimeout(() => {
+            navigate("/");
+        }, 4000);
+    };
+
     return (
         <div className="pp_wrapper">
             <div className="pp_left">
@@ -26,7 +61,7 @@ export const PaymentPage = () => {
                             <p>
                                 Subtotal <i>(inclucive of taxes)</i>
                             </p>
-                            <p>{total}</p>
+                            <p>₹ {total}.00</p>
                         </div>
                         <div className="pp_left_price_deets_box_row2">
                             <p>Shipping</p>
@@ -35,13 +70,13 @@ export const PaymentPage = () => {
                         <hr></hr>
                         <div className="pp_left_price_deets_box_row3">
                             <h1>Total</h1>
-                            <h1>{total}</h1>
+                            <h1>₹ {total}.00</h1>
                         </div>
                     </div>
                 </div>
                 <div className="pp_left_cart_wrapper">
                     <h1 className="pp_left_cart_txt">CART SUMMARY</h1>
-                    <div className="pp_left_cart_summary_box">
+                    {/* <div className="pp_left_cart_summary_box">
                         {cart_products?.map((elem) => {
                             return (
                                 <div style={{ backgroundColor: "teal" }}>
@@ -57,7 +92,96 @@ export const PaymentPage = () => {
                                 </div>
                             );
                         })}
+                    </div> */}
+
+                    {/* ---------------------- */}
+                    <div className="cart_main_left_cart_summary_box">
+                        {cart_arr.map((elem, index) => {
+                            return (
+                                <div>
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "flex-start",
+                                            margin: "10px auto",
+                                            alignItems: "center",
+                                            textAlign: "left",
+                                            padding: "5px",
+                                        }}
+                                    >
+                                        <div
+                                            style={{
+                                                // backgroundColor: "red",
+                                                marginRight: "15px",
+                                            }}
+                                        >
+                                            <img
+                                                src={elem.image}
+                                                alt="image"
+                                                style={{
+                                                    width: "30px",
+                                                }}
+                                            />
+                                        </div>
+
+                                        <div
+                                            style={{
+                                                // backgroundColor: "red",
+                                                marginRight: "15px",
+                                                width: "500px",
+                                            }}
+                                        >
+                                            <p
+                                                style={{
+                                                    fontSize: "small",
+                                                    fontWeight: "400",
+                                                }}
+                                            >
+                                                {elem.title}
+                                            </p>
+                                            <p
+                                                style={{
+                                                    fontSize: "medium",
+                                                    fontWeight: "500",
+                                                }}
+                                            >
+                                                ₹ {elem.price}
+                                            </p>
+                                        </div>
+                                        {/* 
+                                        <div
+                                            style={{
+                                                // backgroundColor: "red",
+                                                marginRight: "15px",
+                                            }}
+                                        >
+                                            <MdDelete
+                                                size={30}
+                                                onClick={console.log("yes")}
+                                            />
+                                        </div> */}
+
+                                        <div
+                                            style={{
+                                                // backgroundColor: "red",
+                                                marginRight: "1px",
+                                                display: "flex",
+                                                justifyContent: "space-evenly",
+                                                alignItems: "center",
+                                                width: "100px",
+                                            }}
+                                        >
+                                            <button>Qty : 1</button>
+                                        </div>
+                                    </div>
+
+                                    <hr></hr>
+                                </div>
+                            );
+                        })}
                     </div>
+
+                    {/* --------------------- */}
                 </div>
             </div>
             <div className="pp_right">
@@ -110,17 +234,57 @@ export const PaymentPage = () => {
                                             </span>
                                         </div>
                                         <div className="pp_right_card_contents_row3">
-                                            <input placeholder="Card Number *"></input>
+                                            <input
+                                                placeholder="Card Number *"
+                                                onChange={(e) => {
+                                                    setCardDetails({
+                                                        ...cardDetails,
+                                                        card_num:
+                                                            e.target.value,
+                                                    });
+                                                }}
+                                            ></input>
                                         </div>
                                         <div className="pp_right_card_contents_row4">
-                                            <input placeholder="Card Holder Name *"></input>
+                                            <input
+                                                placeholder="Card Holder Name *"
+                                                onChange={(e) => {
+                                                    setCardDetails({
+                                                        ...cardDetails,
+                                                        card_name:
+                                                            e.target.value,
+                                                    });
+                                                }}
+                                            ></input>
                                         </div>
                                         <div className="pp_right_card_contents_row5">
-                                            <input placeholder="Expiry (MM/YY) *"></input>
-                                            <input placeholder="CVV *"></input>
+                                            <input
+                                                placeholder="Expiry (MM/YY) *"
+                                                onChange={(e) => {
+                                                    setCardDetails({
+                                                        ...cardDetails,
+                                                        card_exp:
+                                                            e.target.value,
+                                                    });
+                                                }}
+                                            ></input>
+                                            <input
+                                                placeholder="CVV *"
+                                                type="password"
+                                                onChange={(e) => {
+                                                    setCardDetails({
+                                                        ...cardDetails,
+                                                        card_cvv:
+                                                            e.target.value,
+                                                    });
+                                                }}
+                                            ></input>
                                         </div>
                                         <div className="pp_right_card_contents_row6">
-                                            <button className="pp_right_card_contents_row6_btn">
+                                            <button
+                                                className="pp_right_card_contents_row6_btn"
+                                                onClick={handleClick}
+                                            >
                                                 PROCEED TO PAY
                                             </button>
                                         </div>

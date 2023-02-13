@@ -32,11 +32,15 @@
 
 .down_div_stayintouch_txt {
     margin: 10px auto 30px auto;
+    text-align: center;
 }
 
 .down_div_stayintouch_inputbox {
     margin: auto;
     padding: 5px;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
 }
 
 .down_div_stayintouch_inputbox > input {

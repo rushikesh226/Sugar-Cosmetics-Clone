@@ -18,6 +18,13 @@ let Navbar = () => {
         return store.userReducer.username;
     });
 
+    // let [count, setCount] = useState(0);
+    let count = 0;
+
+    count = useSelector((store) => {
+        return store.cartReducer.cart.length;
+    });
+
     console.log(loginPlaceholder, "<- --------- this ");
     useEffect(() => {
         //yo
@@ -204,6 +211,9 @@ let Navbar = () => {
                         src="https://cdn.sanity.io/images/gxmub2ol/production/98a9ebae1456c75c727d5fab8c934dae908a144c-1493x380.png"
                         alt="sugar_logo"
                         className="img_style"
+                        onClick={() => {
+                            navigate("/");
+                        }}
                     />
                 </div>
 
@@ -248,7 +258,15 @@ let Navbar = () => {
                     <div
                         className="navbar_end_icons_cart"
                         onClick={() => navigate("/cart")}
+                        style={{
+                            display: "flex",
+                            justifyContent: "space-around",
+                            alignItems: "center",
+                        }}
                     >
+                        <span style={{ color: "red", marginRight: "5px" }}>
+                            {count}
+                        </span>
                         <BsBag
                             color="white"
                             size="20"
