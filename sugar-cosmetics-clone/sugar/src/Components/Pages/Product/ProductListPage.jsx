@@ -7,7 +7,7 @@ import ProductCard from "./ProductCard";
 
 function ProductListPage() {
   const [data, setData] = useState([]);
-  const [isLoading,setIsLoading]=useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const { sort } = useContext(SortContext);
   useEffect(() => {
     getData();
@@ -36,7 +36,7 @@ function ProductListPage() {
           display: "grid",
           gridTemplateColumns: "repeat(3,1fr)",
           width: "80%",
-          marginBottom:"50px"
+          marginBottom: "50px",
         }}
       >
         {data.map((product, i) => {
