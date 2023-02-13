@@ -6,6 +6,8 @@ import { ProductCardRows } from "./ProductCardRows";
 import { PictureCardRow } from "./PictureCardRow";
 import { Link } from "react-router-dom";
 import { SingleImageRow } from "./SingleImageRow";
+// import ImageSlider, { Slide } from "react-auto-image-slider";
+import DemoCarousel from "./Caraousel";
 
 export function Middle() {
     let [index, setIndex] = useState(0);
@@ -171,6 +173,45 @@ export function Middle() {
         },
     ];
 
+    const super_Savers = [
+        {
+            title: "Set of 4 Kajal Set",
+            img: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_e4b6c948-178e-4bfe-a3b3-926119dea615.jpg?v=1649865681",
+            alt_img:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/2_9af4ea51-8e26-455d-8d6b-cddeea17b723.jpg?v=1649865683",
+            price: 799,
+            shade: 4,
+            link: "https://in.sugarcosmetics.com/products/set-of-4-kajals-set",
+        },
+        {
+            title: "Bold Honesty Face Makeup Value Set",
+            img: "https://cdn.shopify.com/s/files/1/0906/2558/products/Value-Set-11---WBG-Images_Koh.jpg?v=1659456291",
+            alt_img:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/Value-Set-11---WBG-Images_1.jpg?v=1659456262",
+            price: 699,
+            shade: 12,
+            link: "https://in.sugarcosmetics.com/products/bold-honesty-face-makeup-value-set",
+        },
+        {
+            title: "Glam Eye Makeup Value Set",
+            img: "https://cdn.shopify.com/s/files/1/0906/2558/products/3_209fcc91-df94-49b7-a451-6fc6d07a0cad.jpg?v=1655300033",
+            alt_img:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/1_587a22d2-535a-4ab9-93ab-9c1a6633f10f.jpg?v=1655308817",
+            price: 1249,
+            shade: 24,
+            link: "https://in.sugarcosmetics.com/products/glam-eye-makeup-value-set",
+        },
+        {
+            title: "Face Palette + Lip Balm",
+            img: "https://cdn.shopify.com/s/files/1/0906/2558/products/08.jpg?v=1630511040",
+            alt_img:
+                "https://cdn.shopify.com/s/files/1/0906/2558/products/03_2.jpg?v=1630511043",
+            price: 799,
+            shade: 3,
+            link: "https://in.sugarcosmetics.com/products/face-palette-lip-balm",
+        },
+    ];
+
     let timer = useRef(null);
 
     useEffect(() => {
@@ -299,6 +340,19 @@ export function Middle() {
                 rowTitle="REFER YOUR FRIENDS"
                 imgLink="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F8638d096-d168-404e-9b83-56967625b5e6.jpg&w=1920&q=75"
             />
+
+            <ProductCardRows
+                products={super_Savers}
+                rowTitle="SUPER SAVERS"
+                bg="https://media.sugarcosmetics.com/upload/loginPageBackGroundTexture.png"
+                color="black"
+            />
+            {/* ------------------------------ slide show  --------------------------------*/}
+            <div style={{ marginBottom: "30px" }}>
+                <DemoCarousel />
+            </div>
+
+            {/* --------------- lets get in touch  ----------------------  */}
         </div>
     );
 }

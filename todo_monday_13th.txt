@@ -1,0 +1,24 @@
+Todo ------------------------
+
+end point page 
+
+fixed ----------------------
+
+indi product page -
+	made all shades interactive 
+	add to cart function added
+
+navbar logo - 
+	bigger
+	made drop down clickable and fixed closing drop down bug 
+	lips + all drop down links -> point ot product list page  
+
+hoem page -
+	added carousel at the end
+	added 'lets get in touch' at the end
+	added third background image div at the end
+
+
+if time permits -----------------------
+make a second product list second page
+make a second indi product page 	

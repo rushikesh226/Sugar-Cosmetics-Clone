@@ -295,6 +295,7 @@ details[open] > summary {
 }
 /* recommended products - main div down */
 
+/* 
 .down_div_recommended_products_bgwrapper {
     margin: 30px auto;
     background-image: url("https://in.sugarcosmetics.com/desc-images/Rectangle_background.svg");
@@ -349,4 +350,4 @@ details[open] > summary {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 5px 40px;
-}
+} */
