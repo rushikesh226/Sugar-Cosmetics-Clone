@@ -1,0 +1,7 @@
+.linkColor {
+    color: rgb(4, 170, 170);
+}
+
+.linkColor:hover {
+    color: rgb(0, 0, 0);
+}

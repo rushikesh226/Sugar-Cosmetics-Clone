@@ -1,39 +1,17 @@
-.sliding_images_box {
-}
-
-:root {
-    --start-margin: 100%;
-    --end-margin: 0;
-}
-
-.sliding_images {
-    animation-duration: 1s;
-    animation-name: slidein;
-}
-
-@keyframes slidein {
-    from {
-        margin-left: var(--start-margin);
-    }
-
-    to {
-        margin-left: var(--end-margin);
-    }
-}
-
-/* lets get in touch - at the end of the page  */
-
 .down_div_recommended_products_bgwrapper {
-    margin: 30px auto;
+    margin: 10px auto;
     background-image: url("https://in.sugarcosmetics.com/desc-images/Rectangle_background.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 20px;
+    padding-bottom: 100px;
+    margin-bottom: -70px;
+    margin-top: 0px;
 }
 
 .down_div_stayintouch_heading {
-    margin: 50px auto 5px auto;
+    margin: 10px auto 5px auto;
     display: flex;
     justify-content: space-around;
     align-items: center;

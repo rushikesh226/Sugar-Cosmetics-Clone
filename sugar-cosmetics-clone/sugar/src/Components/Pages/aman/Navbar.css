@@ -12,11 +12,12 @@
     height: 100px;
     align-items: center;
     justify-content: space-between;
+    padding: 0px 18px 0px 18px;
 }
 
 .img_style {
     background-color: black;
-    width: 150px;
+    width: 200px;
     padding: 10px;
 }
 
@@ -107,6 +108,18 @@
 .navbar_row2_style {
     display: flex;
     justify-content: space-evenly;
-    padding: 13px 20px 14px 5px;
+    padding: 0px 20px 0px 5px;
     width: 90%;
+}
+
+.navbar_row2_lips,
+.navbar_row2_eyes,
+.navbar_row2_face,
+.navbar_row2_skincare,
+.navbar_row2_acc_andREST {
+    /* background-color: red; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
