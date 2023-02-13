@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import styles from "./sugar.module.css";
+import styles from "./Suger.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import { v4 as uuid } from "uuid";
 
-const Cartsugar = ({ cart, setCart, handleChange }) => {
-    const navigate = useNavigate();
- console.log(cart);
+const CartSugar = ({ cart, setCart, handleChange }) => {
+  const navigate = useNavigate();
+  console.log(cart);
   const [Cost, setCost] = useState(0);
-const [shipping, setShpping] = useState(0);
+  const [shipping, setShpping] = useState(0);
   const handleRemove = (id) => {
     const arr = cart.filter((item) => item.id !== id);
     setCart(arr);
@@ -18,24 +18,22 @@ const [shipping, setShpping] = useState(0);
     let ans = 0;
     cart.map((item) => (ans += item.amount * item.price));
     setCost(ans);
-    
   };
- 
+
   useEffect(() => {
     handleCost();
   });
-function getRandomArbitrary(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
-useEffect(() => {
-  setShpping(getRandomArbitrary(40,100));
-},[]);
+  function getRandomArbitrary(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+  useEffect(() => {
+    setShpping(getRandomArbitrary(40, 100));
+  }, []);
 
+  useEffect(() => {
+    localStorage.setItem("Cost", Cost);
+  }, [Cost]);
 
-useEffect(() => {
-  localStorage.setItem("Cost", Cost);
-}, [Cost]);
- 
   console.log(Cost);
   return (
     <>
@@ -81,7 +79,7 @@ useEffect(() => {
               <div>
                 {/* // maping the cartData */}
 
-                {cart.map((item) => (
+                {cart?.map((item) => (
                   <div className={styles.MainDiv} key={uuid()}>
                     <div>
                       <img className={styles.imas} src={item.image} />
@@ -248,9 +246,9 @@ useEffect(() => {
                     backgroundColor: "darkslategray",
                     color: "#fff",
                   }}
-                  onClick= {()=> navigate("/Delivery")}
+                  onClick={() => navigate("/Delivery")}
                 >
-                Delivery Information
+                  Delivery Information
                 </button>
               </div>
             </div>
@@ -261,4 +259,4 @@ useEffect(() => {
   );
 };
 
-export default cart;
+export default CartSugar;
