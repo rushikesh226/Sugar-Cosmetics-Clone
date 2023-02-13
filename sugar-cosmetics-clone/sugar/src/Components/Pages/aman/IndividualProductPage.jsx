@@ -131,7 +131,7 @@ export default function IndividualProductPage() {
     };
 
     let addProductToCart = () => {
-        console.log("inside on click");
+        
         dispatch(addToCart(currentObj));
     };
 
@@ -154,7 +154,7 @@ export default function IndividualProductPage() {
     let changeImageSrcShade = (index) => {
         setMainImgSrc(shades_Images[index]);
     };
-
+    
     return (
         <div>
             {/* navbar begins  */}
