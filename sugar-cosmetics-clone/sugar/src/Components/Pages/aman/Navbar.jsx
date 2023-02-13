@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { MdSearch, MdOutlineLocalOffer } from "react-icons/md";
 import { BsSearch, BsHeart, BsBag } from "react-icons/bs";
@@ -7,9 +7,25 @@ import { BsFillHeartFill } from "react-icons/bs";
 import { DropDownBox } from "./DropDownBox";
 import { useNavigate } from "react-router";
 import { element } from "prop-types";
+import { useSelector } from "react-redux";
 
 let Navbar = () => {
     const navigate = useNavigate();
+
+    const [loginPlaceholder, setLoginPlaceholder] = useState("Login/Register");
+
+    let username = useSelector((store) => {
+        return store.userReducer.username;
+    });
+
+    console.log(loginPlaceholder, "<- --------- this ");
+    useEffect(() => {
+        //yo
+        if (username == undefined || username == "" || username == null)
+            setLoginPlaceholder("Login/Register");
+        else setLoginPlaceholder(` Welcome ! ${username} `);
+    }, [username]);
+
     const ddContentsLips = [
         {
             title: "LIPSTICK",
@@ -210,9 +226,14 @@ let Navbar = () => {
                 </div>
 
                 <div>
-                    <button className="navbar_login_btn">
+                    <button
+                        className="navbar_login_btn"
+                        onClick={() => {
+                            navigate("/login");
+                        }}
+                    >
                         <FaRegUserCircle size={20} m={20} color="white" />
-                        <span>Login/Register</span>
+                        <span>{loginPlaceholder}</span>
                     </button>
                 </div>
 
