@@ -1,10 +1,11 @@
 import { combineReducers, legacy_createStore as createStore } from "redux";
 import { cartReducer } from "./cartReducer";
 import { wishlistReducer } from "./wishlistReducer";
-
+import { userReducer } from "./userReducer";
 const combined_reducers = combineReducers({
   cartReducer,
   wishlistReducer,
+  userReducer
 });
 
 const store = createStore(

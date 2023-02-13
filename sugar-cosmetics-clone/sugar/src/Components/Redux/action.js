@@ -1,4 +1,4 @@
-import { ADD_TO_CART, ADD_TO_WISHLIST } from "./actionTypes";
+import { ADD_TO_CART, ADD_TO_WISHLIST, ADD_USER } from "./actionTypes";
 
 let addToCart = (product_item) => {
     return {
@@ -14,4 +14,11 @@ let addToWishlist = (wishlist_item) => {
     };
 };
 
-export { addToCart, addToWishlist };
+const addUser=(username)=>{
+    return {
+        type:ADD_USER,
+        payload:username
+    }
+}
+
+export { addToCart, addToWishlist,addUser };

@@ -48,9 +48,11 @@
 .input_box {
     border: 2px solid gray;
     display: flex;
-    height: 50px;
+    height: 60px;
     width: 300px;
     /* padding: 10px; */
+    align-items: center;
+    justify-content: space-between;
     border-radius: 0.3rem;
 
 }
@@ -68,8 +70,9 @@
 
 .input_num {
     font-weight: bold;
-    margin-top: 8px;
+    margin:auto;
     color: black;
+    
 }
 
 .text {
