@@ -4,6 +4,7 @@ import "./DropDownBox.css";
 export function DropDownBox({ contents, left_offset, closeAllDropDownBoxes }) {
     // let [linkColor, setLinkColor] = useState("teal");
     // contents : title - > indivudual lists contents
+    // link link
     return (
         <div
             style={{
