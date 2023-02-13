@@ -16,6 +16,7 @@ import {
     BreadcrumbLink,
     BreadcrumbSeparator,
     div,
+    useToast,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { ProductCardRows } from "./ProductCardRows";
@@ -25,6 +26,9 @@ import { GetInTouch } from "./GetInTouch";
 
 // take name, price, photo and description
 export default function IndividualProductPage() {
+    const [cartText, setCartText] = useState("ADD TO CART");
+  const [cartColor, setCartColor] = useState("black");
+  const toast = useToast();
     const dispatch = useDispatch();
     const [ddownBtns, setddToggle] = useState([true, true, true, true, true]);
 
@@ -133,6 +137,14 @@ export default function IndividualProductPage() {
     let addProductToCart = () => {
         
         dispatch(addToCart(currentObj));
+        toast({
+            title: "Item Added To Cart",
+            status: "success",
+            duration: 3000,
+            isClosable: true,
+          });
+          setCartText("ADDED TO CART");
+          setCartColor("teal");
     };
 
     const shades_Images = [
@@ -406,6 +418,13 @@ export default function IndividualProductPage() {
                             <button
                                 className="right_div_row5_cart_addtocart_btn"
                                 onClick={addProductToCart}
+                                style={{
+                                    color: "white",
+                                    backgroundColor: `${cartColor}`,
+                                    height: "100%",
+                                    width: "100%",
+                                    borderRadius: "10px",
+                                  }}
                             >
                                 ADD TO CART
                             </button>
