@@ -1,5 +1,5 @@
-import React from "react";
-import { Box } from "@chakra-ui/react";
+import React, { useState } from "react";
+import { Box, useToast } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../Redux/action";
 import { useNavigate } from "react-router-dom";
@@ -13,10 +13,22 @@ function ProductCard({ image, title, price, rating, reviews, shades }) {
     reviews,
     shades,
   };
+  const [cartText,setCartText]=useState("ADD TO CART");
+  const [cartColor,setCartColor]=useState("black");
+  const toast = useToast();
   const dispatch = useDispatch();
   const productAddToCart = () => {
     dispatch(addToCart(cartObj));
+    toast({
+      title: "Item Added To Cart",
+      status: "success",
+      duration: 5000,
+      isClosable: true,
+    });
+    setCartText("ADDED TO CART");
+    setCartColor("teal");
   };
+
   return (
     <Box
       style={{
@@ -124,14 +136,14 @@ function ProductCard({ image, title, price, rating, reviews, shades }) {
             <button
               style={{
                 color: "white",
-                backgroundColor: "black",
+                backgroundColor:`${cartColor}`,
                 height: "100%",
                 width: "100%",
                 borderRadius: "10px",
               }}
               onClick={productAddToCart}
             >
-              ADD TO CART
+              {cartText}
             </button>
           </Box>
         </Box>
