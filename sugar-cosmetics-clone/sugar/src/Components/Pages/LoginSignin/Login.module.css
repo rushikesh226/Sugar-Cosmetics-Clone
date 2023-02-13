@@ -2,11 +2,26 @@
     color: white;
     background-color: black;
     cursor: pointer;
+    text-align: center;
 }
 
+.copyright {
+    color: #999;
+    background-color: black;
+    text-align: center;
+    margin-bottom: -5%;
+    margin-left: -580px;
+}
+
+
+.hi_image{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
 .container {
     display: flex;
-
+    height: 100vh;
 }
 
 .img_left {
@@ -27,12 +42,15 @@
     flex-direction: column;
 }
 
+.background{
+    background-image: url("https://img.freepik.com/premium-vector/abstract-modern-white-grey-background-texture-chaotic-polygonal-surface-background-design_266639-1401.jpg?w=740");
+}
 .input_box {
     border: 2px solid gray;
     display: flex;
-    height: 40px;
+    height: 50px;
     width: 300px;
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 0.3rem;
 
 }
@@ -60,6 +78,26 @@
     margin-top: 20px;
     text-align: center;
     color: grey;
+    padding:10px;
+}
+
+.text1{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.pink{
+    color:#fc2779;
+}
+
+.belowOtp{
+    display:flex;
+}
+
+input[type=checkbox] {
+    accent-color: black;
+    margin-right: 5px;
 }
 
 .otp_btn {

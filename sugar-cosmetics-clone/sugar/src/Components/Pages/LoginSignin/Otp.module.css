@@ -14,7 +14,7 @@
 
 .img_right {
     width: 60%;
-    background-image: url("https://img.freepik.com/premium-vector/abstract-modern-white-grey-background-texture-chaotic-polygonal-surface-background-design_266639-1401.jpg?w=740");
+    background-image: url("https://media.sugarcosmetics.com/upload/loginPageBackGroundTexture.png");
     justify-content: center;
     align-items: center;
     display: flex;
@@ -33,12 +33,13 @@
 
 .input_item {
     border: none;
-    margin: 8px;
+    /* margin: 8px; */
     width: 250px;
     height: 20px;
     border: none;
-    padding: 4px;
+    /* padding: 4px; */
     color: black;
+    background-color: transparent;
 }
 
 .input_num {
