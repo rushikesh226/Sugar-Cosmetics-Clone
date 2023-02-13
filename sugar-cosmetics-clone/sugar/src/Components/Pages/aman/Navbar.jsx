@@ -5,8 +5,11 @@ import { BsSearch, BsHeart, BsBag } from "react-icons/bs";
 import { FaRegUserCircle, FaRegHeart } from "react-icons/fa";
 import { BsFillHeartFill } from "react-icons/bs";
 import { DropDownBox } from "./DropDownBox";
+import { useNavigate } from "react-router";
+import { element } from "prop-types";
 
 let Navbar = () => {
+    const navigate = useNavigate();
     const ddContentsLips = [
         {
             title: "LIPSTICK",
@@ -144,16 +147,36 @@ let Navbar = () => {
     });
 
     let showDropDownBox = (category) => {
-        setDropDownBoxes({
-            ...dropDownBoxes,
-            [category]: true,
-        });
+        // when i click on one nav, close others
+        let newDropDownStates = {};
+        for (let element in dropDownBoxes) {
+            if (element === category) {
+                newDropDownStates[element] = true;
+            } else {
+                newDropDownStates[element] = false;
+            }
+        }
+
+        setDropDownBoxes((prev) => newDropDownStates);
+        // setDropDownBoxes({
+        //     ...dropDownBoxes,
+        //     [category]: true,
+        // });
     };
 
     let collapseDropDownBox = (category) => {
         setDropDownBoxes({
             ...dropDownBoxes,
             [category]: false,
+        });
+    };
+
+    let closeAllDropDownBoxes = () => {
+        setDropDownBoxes({
+            lips: false,
+            eyes: false,
+            face: false,
+            skin: false,
         });
     };
 
@@ -220,13 +243,18 @@ let Navbar = () => {
 
             <div className="navbar_row2_wrapper">
                 <div className="navbar_row2_style">
-                    <div className="navbar_row2_lips">
+                    <div
+                        className="navbar_row2_lips"
+                        onMouseOver={() => {
+                            showDropDownBox("lips");
+                        }}
+                        onMouseOut={() => {
+                            collapseDropDownBox("lips");
+                        }}
+                    >
                         <div
-                            onMouseOver={() => {
-                                showDropDownBox("lips");
-                            }}
-                            onMouseOut={() => {
-                                collapseDropDownBox("lips");
+                            onClick={() => {
+                                navigate("/products");
                             }}
                         >
                             LIPS
@@ -235,92 +263,101 @@ let Navbar = () => {
                         {dropDownBoxes.lips === true ? (
                             <DropDownBox
                                 contents={ddContentsLips}
-                                left_offset={"5px"}
+                                left_offset={"25px"}
+                                closeAllDropDownBoxes={closeAllDropDownBoxes}
                             />
                         ) : (
                             <> </>
                         )}
                     </div>
-                    <div className="navbar_row2_eyes">
-                        <div
-                            onMouseOver={() => {
-                                showDropDownBox("eyes");
-                            }}
-                            onMouseOut={() => {
-                                collapseDropDownBox("eyes");
-                            }}
-                        >
-                            EYES
-                        </div>
+                    <div
+                        className="navbar_row2_eyes"
+                        onMouseOver={() => {
+                            showDropDownBox("eyes");
+                        }}
+                        onMouseOut={() => {
+                            collapseDropDownBox("eyes");
+                        }}
+                    >
+                        <div>EYES</div>
                         {dropDownBoxes.eyes === true ? (
                             <DropDownBox
                                 contents={ddContentsEyes}
-                                left_offset={"10px"}
+                                left_offset={"110px"}
+                                closeAllDropDownBoxes={closeAllDropDownBoxes}
                             />
                         ) : (
                             <> </>
                         )}
                     </div>
-                    <div className="navbar_row2_face">
-                        <div
-                            onMouseOver={() => {
-                                showDropDownBox("face");
-                            }}
-                            onMouseOut={() => {
-                                collapseDropDownBox("face");
-                            }}
-                        >
-                            FACE
-                        </div>
+                    <div
+                        className="navbar_row2_face"
+                        onMouseOver={() => {
+                            showDropDownBox("face");
+                        }}
+                        onMouseOut={() => {
+                            collapseDropDownBox("face");
+                        }}
+                    >
+                        <div>FACE</div>
                         {dropDownBoxes.face === true ? (
                             <DropDownBox
                                 contents={ddContentsFace}
-                                left_offset={"00px"}
+                                left_offset={"200px"}
+                                closeAllDropDownBoxes={closeAllDropDownBoxes}
                             />
                         ) : (
                             <> </>
                         )}
                     </div>
-                    <div className="navbar_row2_skincare">
-                        <div
-                            onMouseOver={() => {
-                                showDropDownBox("skin");
-                            }}
-                            onMouseOut={() => {
-                                collapseDropDownBox("skin");
-                            }}
-                        >
-                            SKINCARE
-                        </div>
+                    <div
+                        className="navbar_row2_skincare"
+                        onMouseOver={() => {
+                            showDropDownBox("skin");
+                        }}
+                        onMouseOut={() => {
+                            collapseDropDownBox("skin");
+                        }}
+                    >
+                        <div>SKINCARE</div>
                         {dropDownBoxes.skin === true ? (
                             <DropDownBox
                                 contents={ddContentsSkin}
-                                left_offset={"00px"}
+                                left_offset={"280px"}
+                                closeAllDropDownBoxes={closeAllDropDownBoxes}
                             />
                         ) : (
                             <> </>
                         )}
                     </div>
                     <div>
-                        <div>ACCESSORIES</div>
+                        <div className="navbar_row2_acc_andREST">
+                            ACCESSORIES
+                        </div>
                     </div>
                     <div>
-                        <div>GIFTS & KITS</div>
+                        <div className="navbar_row2_acc_andREST">
+                            GIFTS & KITS
+                        </div>
                     </div>
                     <div>
-                        <div>BESTSELLERS</div>
+                        <div className="navbar_row2_acc_andREST">
+                            BESTSELLERS
+                        </div>
                     </div>
                     <div>
-                        <div>NEW LAUNCH</div>
+                        <div className="navbar_row2_acc_andREST">
+                            NEW LAUNCH
+                        </div>
                     </div>
                     <div>
-                        <div>OFFERS</div>
+                        <div className="navbar_row2_acc_andREST">OFFERS</div>
                     </div>
                     <div>
-                        <div>BLOG</div>
+                        <div className="navbar_row2_acc_andREST">BLOG</div>
                     </div>
                     <div>
-                        <div>STORIES</div>
+                        <div className="navbar_row2_acc_andREST">STORIES</div>
                     </div>
                 </div>
             </div>

@@ -19,9 +19,13 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { ProductCardRows } from "./ProductCardRows";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../Redux/action";
+import { GetInTouch } from "./GetInTouch";
 
 // take name, price, photo and description
 export default function IndividualProductPage() {
+    const dispatch = useDispatch();
     const [ddownBtns, setddToggle] = useState([true, true, true, true, true]);
 
     const toggleBtn = (index) => {
@@ -117,11 +121,45 @@ export default function IndividualProductPage() {
         setMainImgSrc(e.target.src);
     };
 
+    const currentObj = {
+        image: "https://cdn.shopify.com/s/files/1/0906/2558/products/01_0363dd69-2491-44f9-b93e-3f8fd1bf47c6.jpg?v=1640964864",
+        title: "Matte As Hell Crayon Lipstick - 11 Elle Woods (Brown Nude)",
+        shades: 12,
+        price: "849",
+        rating: 4.2,
+        reviews: 1,
+    };
+
+    let addProductToCart = () => {
+        console.log("inside on click");
+        dispatch(addToCart(currentObj));
+    };
+
+    const shades_Images = [
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/01_7db669dd-9541-4d04-ad5b-49653474339d.jpg?v=1640792033",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/01_da81eed3-37c9-4942-bfaf-2e48c01bec66.jpg?v=1640792050",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/Mah-with-sharpener-02.jpg?v=1657294373",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/01_bfd85cda-3467-4278-a7b8-91aeecec24bf.jpg?v=1640964815",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/01_859ec279-20b0-42e0-aae3-e029a84af010.jpg?v=1665386269",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/01_0363dd69-2491-44f9-b93e-3f8fd1bf47c6.jpg?v=1640964864",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/01_bb5b59dc-3a21-49cd-96a8-c48a430f9b7c.jpg?v=1640964889",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/01_063ee877-bc35-4df0-94ff-ff6300a7639c.jpg?v=1640964904",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/01_75351242-28e2-4d7b-b3ef-b86cec216471.jpg?v=1640964934",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/01_edb38a4e-e7f2-41ca-9e8f-188967ce7773.jpg?v=1640964949",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/01_d38eaed1-fef4-4274-b860-4e388ff7b577.jpg?v=1640964966",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/01_72b07615-23da-4dc0-b85c-9b8b33515fd5.jpg?v=1640964982",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/01_a35101ed-2f92-4bec-bfaa-7d9b73e350dd.jpg?v=1640965349",
+    ];
+
+    let changeImageSrcShade = (index) => {
+        setMainImgSrc(shades_Images[index]);
+    };
+
     return (
         <div>
             {/* navbar begins  */}
 
-            <Navbar />
+            {/* <Navbar /> */}
             {/* <div
                 style={{
                     backgroundColor: "black",
@@ -249,19 +287,97 @@ export default function IndividualProductPage() {
                         </div>
 
                         <div className="right_div_row3_shades_wrapper">
-                            <button className="right_div_row3_shades_wrapper_btn"></button>
-                            <button className="right_div_row3_shades_wrapper_btn"></button>
-                            <button className="right_div_row3_shades_wrapper_btn"></button>
-                            <button className="right_div_row3_shades_wrapper_btn"></button>
-                            <button className="right_div_row3_shades_wrapper_btn"></button>
-                            <button className="right_div_row3_shades_wrapper_btn"></button>
-                            <button className="right_div_row3_shades_wrapper_btn"></button>
-                            <button className="right_div_row3_shades_wrapper_btn"></button>
-                            <button className="right_div_row3_shades_wrapper_btn"></button>
-                            <button className="right_div_row3_shades_wrapper_btn"></button>
-                            <button className="right_div_row3_shades_wrapper_btn"></button>
-                            <button className="right_div_row3_shades_wrapper_btn"></button>
-                            <button className="right_div_row3_shades_wrapper_btn"></button>
+                            <button
+                                className="right_div_row3_shades_wrapper_btn"
+                                onClick={() => {
+                                    changeImageSrcShade(0);
+                                }}
+                                style={{ backgroundColor: "rgb(193,0,44)" }}
+                            ></button>
+                            <button
+                                className="right_div_row3_shades_wrapper_btn"
+                                onClick={() => {
+                                    changeImageSrcShade(1);
+                                }}
+                                style={{ backgroundColor: "rgb(180,25,95)" }}
+                            ></button>
+                            <button
+                                className="right_div_row3_shades_wrapper_btn"
+                                onClick={() => {
+                                    changeImageSrcShade(2);
+                                }}
+                                style={{ backgroundColor: "rgb(180,52,68)" }}
+                            ></button>
+                            <button
+                                className="right_div_row3_shades_wrapper_btn"
+                                onClick={() => {
+                                    changeImageSrcShade(3);
+                                }}
+                                style={{ backgroundColor: "rgb(156,68,75)" }}
+                            ></button>
+                            <button
+                                className="right_div_row3_shades_wrapper_btn"
+                                onClick={() => {
+                                    changeImageSrcShade(4);
+                                }}
+                                style={{ backgroundColor: "rgb(133,20,28)" }}
+                            ></button>
+                            <button
+                                className="right_div_row3_shades_wrapper_btn"
+                                onClick={() => {
+                                    changeImageSrcShade(5);
+                                }}
+                                style={{ backgroundColor: "rgb(190,73,63)" }}
+                            ></button>
+                            <button
+                                className="right_div_row3_shades_wrapper_btn"
+                                onClick={() => {
+                                    changeImageSrcShade(6);
+                                }}
+                                style={{ backgroundColor: "rgb(113,8,23)" }}
+                            ></button>
+                            <button
+                                className="right_div_row3_shades_wrapper_btn"
+                                onClick={() => {
+                                    changeImageSrcShade(7);
+                                }}
+                                style={{ backgroundColor: "rgb(82,26,20)" }}
+                            ></button>
+                            <button
+                                className="right_div_row3_shades_wrapper_btn"
+                                onClick={() => {
+                                    changeImageSrcShade(8);
+                                }}
+                                style={{ backgroundColor: "rgb(141,66,66)" }}
+                            ></button>
+                            <button
+                                className="right_div_row3_shades_wrapper_btn"
+                                onClick={() => {
+                                    changeImageSrcShade(9);
+                                }}
+                                style={{ backgroundColor: "rgb(181,91,69)" }}
+                            ></button>
+                            <button
+                                className="right_div_row3_shades_wrapper_btn"
+                                onClick={() => {
+                                    changeImageSrcShade(10);
+                                }}
+                                style={{ backgroundColor: "rgb(159,71,66)" }}
+                            ></button>
+                            <button
+                                className="right_div_row3_shades_wrapper_btn"
+                                onClick={() => {
+                                    changeImageSrcShade(11);
+                                }}
+                                style={{ backgroundColor: "rgb(200,99,92)" }}
+                            ></button>
+                            <button
+                                className="right_div_row3_shades_wrapper_btn"
+                                onClick={() => {
+                                    changeImageSrcShade(12);
+                                }}
+                                style={{ backgroundColor: "rgb(185,42,103)" }}
+                            ></button>
                         </div>
 
                         <div className="right_div_row4_offers_wrapper">
@@ -287,7 +403,10 @@ export default function IndividualProductPage() {
                                 <FiHeart w={20} />
                             </button>
 
-                            <button className="right_div_row5_cart_addtocart_btn">
+                            <button
+                                className="right_div_row5_cart_addtocart_btn"
+                                onClick={addProductToCart}
+                            >
                                 ADD TO CART
                             </button>
                         </div>
@@ -549,7 +668,9 @@ export default function IndividualProductPage() {
 
                 {/* -------------------------------------lets stay in touch ----------------------------------- */}
 
-                <div>
+                {/* <GetInTouch /> */}
+
+                {/* <div>
                     <div className="down_div_recommended_products_bgwrapper">
                         <div className="down_div_stayintouch_heading">
                             <div className="line_in_the_middle"></div>
@@ -569,10 +690,10 @@ export default function IndividualProductPage() {
                             <button>SUBSCRIBE</button>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }

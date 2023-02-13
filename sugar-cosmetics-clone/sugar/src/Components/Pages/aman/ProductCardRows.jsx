@@ -6,10 +6,18 @@ import { BsHeart } from "react-icons/bs";
 // title,
 // price,
 // link
+//  filter: blur(8px); -----------------------------------------------------------------------------
 
-export function ProductCardRows({ products, rowTitle, bg }) {
+export function ProductCardRows({ products, rowTitle, bg, color }) {
     // console.log(bg, " background color");
-    let heading_color = bg !== undefined ? "white" : "black";
+    let heading_color;
+
+    if (color == undefined) {
+        heading_color = bg !== undefined ? "white" : "black";
+    } else {
+        heading_color = color;
+    }
+
     return (
         <div
             style={{
