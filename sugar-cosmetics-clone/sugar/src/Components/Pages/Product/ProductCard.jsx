@@ -21,13 +21,13 @@ function ProductCard({ image, title, price, rating, reviews, shades }) {
         width: "290.44px",
         height: "222",
         marginTop: "25px",
-        padding: "10px",
+        padding: "20px",
         backgroundColor: "white",
         borderRadius: "10px",
-        boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+        boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"
       }}
     >
-      <Box paddingLeft="60px">
+      <Box paddingLeft="50px">
         <img
           src={image}
           alt="ProductImage"

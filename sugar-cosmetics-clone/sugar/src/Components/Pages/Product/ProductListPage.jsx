@@ -36,6 +36,7 @@ function ProductListPage() {
           display: "grid",
           gridTemplateColumns: "repeat(3,1fr)",
           width: "80%",
+          marginBottom:"50px"
         }}
       >
         {data.map((product, i) => {
