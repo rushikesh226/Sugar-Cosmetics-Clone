@@ -7,15 +7,18 @@ import ProductCard from "./ProductCard";
 
 function ProductListPage() {
   const [data, setData] = useState([]);
+  const [isLoading,setIsLoading]=useState(false);
   const { sort } = useContext(SortContext);
   useEffect(() => {
     getData();
   }, [sort]);
   const getData = () => {
+    setIsLoading(true);
     fetch(`http://localhost:3001/${sort}`)
       .then((res) => res.json())
       .then((data) => {
         setData(data);
+        setIsLoading(false);
       });
   };
   return (
@@ -33,6 +36,7 @@ function ProductListPage() {
           display: "grid",
           gridTemplateColumns: "repeat(3,1fr)",
           width: "80%",
+          marginBottom:"50px"
         }}
       >
         {data.map((product, i) => {
