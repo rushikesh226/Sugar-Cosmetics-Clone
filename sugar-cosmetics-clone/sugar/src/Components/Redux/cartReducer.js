@@ -6,14 +6,15 @@ const initState = {
     isLoading: false,
 };
 export const cartReducer = (state = initState, { type, payload }) => {
-    switch(type){
-        case ADD_TO_CART :{
+    console.log("our cart state now ->>>> ", state.cart);
+    switch (type) {
+        case ADD_TO_CART: {
             return {
                 ...state,
-                cart:[...state.cart,payload]
-            }
+                cart: [...state.cart, payload],
+            };
         }
-        default:{
+        default: {
             return state;
         }
     }

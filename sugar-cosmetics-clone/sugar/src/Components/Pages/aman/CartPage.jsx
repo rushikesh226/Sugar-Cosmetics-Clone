@@ -5,7 +5,7 @@ import {
     BreadcrumbSeparator,
 } from "@chakra-ui/react";
 import "./CartPage.css";
-
+import { MdDelete } from "react-icons/md";
 import {
     Accordion,
     AccordionItem,
@@ -16,17 +16,28 @@ import {
 import { useSelector } from "react-redux";
 import { Box, Flex } from "@chakra-ui/react";
 import { MdOutlineLocalOffer } from "react-icons/md";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router";
 
 export const CartPage = () => {
     // use selector is here
+    let [total, setTotal] = useState(0);
+    const navigate = useNavigate();
     const cart_arr = useSelector((store) => store.cartReducer.cart);
     console.log(cart_arr, "cart_arr");
     // selector ends here
 
+    useEffect(() => {
+        let temp_total = 0;
+        cart_arr?.forEach((elem) => {
+            temp_total += +elem.price;
+        });
+        setTotal(temp_total);
+    }, []);
+
     return (
         <div>
             {/* this will be navbar */}
-            <div style={{ backgroundColor: "black", height: "130px" }}></div>
 
             {/* navbar ends here mate */}
 
@@ -101,18 +112,116 @@ export const CartPage = () => {
                             <div className="cart_main_left_cart_summary_box">
                                 {cart_arr.map((elem, index) => {
                                     return (
-                                        <div
-                                            style={{
-                                                display: "flex",
-                                                justifyContent: "space-evenly",
-                                            }}
-                                        >
-                                            <p>{elem.title}</p>
-                                            <img
-                                                src={elem.image}
-                                                alt="image"
-                                                style={{ width: "30px" }}
-                                            />
+                                        <div>
+                                            <div
+                                                style={{
+                                                    display: "flex",
+                                                    justifyContent:
+                                                        "flex-start",
+                                                    margin: "10px auto",
+                                                    alignItems: "center",
+                                                    textAlign: "left",
+                                                    padding: "5px",
+                                                }}
+                                            >
+                                                <div
+                                                    style={{
+                                                        // backgroundColor: "red",
+                                                        marginRight: "15px",
+                                                    }}
+                                                >
+                                                    <img
+                                                        src={elem.image}
+                                                        alt="image"
+                                                        style={{
+                                                            width: "30px",
+                                                        }}
+                                                    />
+                                                </div>
+
+                                                <div
+                                                    style={{
+                                                        // backgroundColor: "red",
+                                                        marginRight: "15px",
+                                                        width: "500px",
+                                                    }}
+                                                >
+                                                    <p
+                                                        style={{
+                                                            fontSize: "small",
+                                                            fontWeight: "400",
+                                                        }}
+                                                    >
+                                                        {elem.title}
+                                                    </p>
+                                                    <p
+                                                        style={{
+                                                            fontSize: "medium",
+                                                            fontWeight: "500",
+                                                        }}
+                                                    >
+                                                        ₹ {elem.price}
+                                                    </p>
+                                                </div>
+
+                                                <div
+                                                    style={{
+                                                        // backgroundColor: "red",
+                                                        marginRight: "15px",
+                                                    }}
+                                                >
+                                                    <MdDelete
+                                                        size={30}
+                                                        onClick={console.log(
+                                                            "yes"
+                                                        )}
+                                                    />
+                                                </div>
+
+                                                <div
+                                                    style={{
+                                                        // backgroundColor: "red",
+                                                        marginRight: "1px",
+                                                        display: "flex",
+                                                        justifyContent:
+                                                            "space-evenly",
+                                                        alignItems: "center",
+                                                        width: "100px",
+                                                    }}
+                                                >
+                                                    <button
+                                                        style={{
+                                                            border: "thin solid black",
+                                                            paddingLeft: "5px",
+                                                            paddingRight: "5px",
+                                                            backgroundColor:
+                                                                "whitesmoke",
+                                                            fontWeight: "600",
+                                                            fontSize: "medium",
+                                                            borderRadius: "4px",
+                                                        }}
+                                                    >
+                                                        -
+                                                    </button>
+                                                    <button>1</button>
+                                                    <button
+                                                        style={{
+                                                            border: "thin solid black",
+                                                            paddingLeft: "2px",
+                                                            paddingRight: "2px",
+                                                            backgroundColor:
+                                                                "whitesmoke",
+                                                            fontWeight: "600",
+                                                            fontSize: "medium",
+                                                            borderRadius: "4px",
+                                                        }}
+                                                    >
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <hr></hr>
                                         </div>
                                     );
                                 })}
@@ -198,7 +307,7 @@ export const CartPage = () => {
                                         </p>
                                     </div>
                                     <div>
-                                        <p>9923.00</p>
+                                        <p>₹ {total}.00</p>
                                     </div>
                                 </div>
 
@@ -213,7 +322,7 @@ export const CartPage = () => {
                                 <hr></hr>
                                 <div className="cart_main_right_row2_pd_total">
                                     <div>Total</div>
-                                    <div>9923.00</div>
+                                    <div>₹ {total}.00</div>
                                 </div>
                             </div>
                         </div>
@@ -235,6 +344,25 @@ export const CartPage = () => {
                                     8789925317<br></br>
                                 </p>
                             </div>
+                        </div>
+
+                        <div style={{ display: "flex" }}>
+                            <button
+                                style={{
+                                    backgroundColor: "black",
+                                    color: "white",
+                                    padding: "10px",
+                                    width: "250px",
+                                    height: "55px",
+                                    borderRadius: "20px",
+                                    marginLeft: "12px",
+                                }}
+                                onClick={() => {
+                                    return navigate("/payments");
+                                }}
+                            >
+                                ₹ {total}.00 PLACE ORDER
+                            </button>
                         </div>
                     </div>
                 </div>
