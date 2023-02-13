@@ -22,38 +22,41 @@ function ProductListPage() {
       });
   };
   return (
-    <Box
-      display={"flex"}
-      justifyContent="space-between"
-      gap={"2%"}
-      backgroundColor="#F2F2F2"
-    >
-      <Box width={"20%"} backgroundColor="white" height={"400px"}>
-        <Filters />
-      </Box>
+    <>
+
       <Box
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3,1fr)",
-          width: "80%",
-          marginBottom: "50px",
-        }}
+        display={"flex"}
+        justifyContent="space-between"
+        gap={"2%"}
+        backgroundColor="#F2F2F2"
       >
-        {data.map((product, i) => {
-          return (
-            <ProductCard
-              key={i}
-              image={product.image}
-              title={product.title}
-              price={product.price}
-              rating={product.rating}
-              reviews={product.reviews}
-              shades={product.shades}
-            />
-          );
-        })}
+        <Box width={"20%"} backgroundColor="white" height={"400px"}>
+          <Filters />
+        </Box>
+        <Box
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3,1fr)",
+            width: "80%",
+            marginBottom: "50px",
+          }}
+        >
+          {data.map((product, i) => {
+            return (
+              <ProductCard
+                key={i}
+                image={product.image}
+                title={product.title}
+                price={product.price}
+                rating={product.rating}
+                reviews={product.reviews}
+                shades={product.shades}
+              />
+            );
+          })}
+        </Box>
       </Box>
-    </Box>
+    </>
   );
 }
 
