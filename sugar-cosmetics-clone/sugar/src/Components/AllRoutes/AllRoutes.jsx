@@ -6,6 +6,8 @@ import IndividualProductPage from "../Pages/aman/IndividualProductPage";
 import { PaymentPage } from "../Pages/aman/PaymentPage";
 import NotFoundPage from "../Pages/Product/NotFoundPage";
 import { CartPage } from "../Pages/aman/CartPage";
+import Log from "../Pages/LoginSignin/Login";
+import Otp from "../Pages/LoginSignin/Otp";
 function AllRoutes() {
     return (
         <Routes>
@@ -14,6 +16,8 @@ function AllRoutes() {
             <Route path="/individualPage" element={<IndividualProductPage />} />
             <Route path="/payments" element={<PaymentPage />} />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/otp" element={<Otp />} />
+            <Route path="/login" element={<Log />} />
             <Route path="*" element={<NotFoundPage />} />
         </Routes>
     );
