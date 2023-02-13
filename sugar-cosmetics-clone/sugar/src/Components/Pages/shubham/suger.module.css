@@ -1,0 +1,125 @@
+body {
+    background-color: #f4f4f4;
+  }
+  .carTotal {
+    width: 95%;
+    margin: auto;
+    /*    
+      border:1px solid gray; */
+    margin-top: 25px;
+  }
+  .itemsDiv {
+    width: 100%;
+    margin: auto;
+    /* justify-content: center; */
+    /* border:1px solid gray; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    /* display: flex; */
+  }
+  .half {
+    height: inherit;
+    width: 50%;
+    border: 1px solid gray;
+  
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  .half1 {
+    height: 350px;
+    width: 45%;
+    /* border: 1px solid gray; */
+    padding: 0px 40px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  .gap1 {
+    height: 35px;
+    width: 90%;
+    justify-content: space-around;
+    display: flex;
+    /* border: 1px solid gray; */
+    margin-left: 0px;
+  }
+  .dummy {
+    /* border:1px solid gray; */
+    height: 30px;
+    width: 40%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .promocode {
+    height: 33px;
+    width: 130px;
+    border: 1px solid rgb(199, 196, 196);
+    padding-left: 15px;
+    background-color: #fff;
+    margin-left: 20px;
+    outline: none;
+  }
+  .promosub {
+    height: 37px;
+    width: 70px;
+    border: 1px solid rgb(199, 196, 196);
+    background-color: antiquewhite;
+    margin-left: -10px;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+  }
+  .homeLogo {
+    text-align: start;
+  }
+  .imas {
+    margin-left: 10px;
+    height: 60px;
+    width: 50px;
+  }
+  .MainDiv {
+    margin: auto;
+    width: 98%;
+    display: flex;
+    text-align: left;
+  margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 3px;
+  }
+  .cartname {
+    font-family: Neutra_Display_Titling;
+    margin: auto;
+    width: 300px;
+    font-size: 17px;
+    font-weight: 550;
+    color: gray;
+  }
+  .deleteIcan {
+    margin:auto;
+    width: 25px;
+    height: 25px;
+    position:relative;
+  }
+  
+  .price {
+    margin: auto;
+    margin-right: 20px;
+  }
+  .price > button {
+    border: 0.5px gray solid;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: white;
+  }
+  .GrandPricediv
+  {
+    margin: auto;
+  }
+  
