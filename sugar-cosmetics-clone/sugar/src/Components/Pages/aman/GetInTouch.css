@@ -1,0 +1,58 @@
+.down_div_recommended_products_bgwrapper {
+    margin: 10px auto;
+    background-image: url("https://in.sugarcosmetics.com/desc-images/Rectangle_background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    padding-bottom: 100px;
+    margin-bottom: -70px;
+    margin-top: 0px;
+}
+
+.down_div_stayintouch_heading {
+    margin: 10px auto 5px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+}
+
+.line_in_the_middle {
+    background: black;
+    height: 2px;
+    width: 15%;
+}
+
+.down_div_stayintouch_tagline {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.down_div_stayintouch_txt {
+    margin: 10px auto 30px auto;
+}
+
+.down_div_stayintouch_inputbox {
+    margin: auto;
+    padding: 5px;
+}
+
+.down_div_stayintouch_inputbox > input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 45px;
+    border: thin black solid;
+    padding: 5px;
+    width: 35%;
+}
+
+.down_div_stayintouch_inputbox > button {
+    background-color: black;
+    color: white;
+    height: 45px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px 40px;
+}

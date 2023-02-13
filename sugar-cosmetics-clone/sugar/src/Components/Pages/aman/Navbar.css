@@ -1,0 +1,125 @@
+.navbar_wrapper {
+    display: block;
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+}
+
+.navbar_row1_style {
+    display: flex;
+    background-color: black;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 18px 0px 18px;
+}
+
+.img_style {
+    background-color: black;
+    width: 200px;
+    padding: 10px;
+}
+
+.navbar_search_wrapper {
+    /* background-color: black; */
+    margin: 10px;
+    padding: px;
+    width: 650px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.navbar_search_box {
+    width: 500px;
+    height: 40px;
+    border: thin white solid;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+
+.navbar_search_btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    color: black;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+.navbar_login_btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    /* border: thin solid white; */
+    border-radius: 5px;
+}
+
+.navbar_login_btn:hover {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    border: thin solid rgb(224, 233, 233);
+    border-radius: 5px;
+}
+
+.navbar_login_btn > span {
+    color: white;
+    margin-left: 10px;
+}
+
+.navbar_end_icons_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar_end_icons_wishlist,
+.navbar_end_icons_cart,
+.navbar_end_icons_offer {
+    margin: auto 10px;
+}
+
+/* ------------------------------------  row 2 drop - down menu  ----------------------------- */
+
+.navbar_row2_wrapper {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 10px auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.navbar_row2_style {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 20px 0px 5px;
+    width: 90%;
+}
+
+.navbar_row2_lips,
+.navbar_row2_eyes,
+.navbar_row2_face,
+.navbar_row2_skincare,
+.navbar_row2_acc_andREST {
+    /* background-color: red; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}

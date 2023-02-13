@@ -1,0 +1,353 @@
+.left_div {
+    display: flex;
+    position: sticky;
+    top: 200px;
+    /* left: 100px; */
+    justify-content: space-evenly;
+    width: 45%;
+    height: 50%;
+    /* background-color: yellow; */
+    overflow: hidden;
+    z-index: 200;
+}
+
+.left_div_pic_column_images {
+    border-radius: 12px;
+    width: 75px;
+    border: thin solid black;
+    margin: 5px;
+    padding: 1px 5px;
+}
+
+.left_div_pic_column_images:hover {
+    border-radius: 12px;
+    width: 75px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+.left_div_pic_main_round_wrapper {
+    margin-left: -10px;
+    border-radius: 15px;
+    padding: 10px 50px;
+    border: thin solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.left_div_pic_main_round_wrapper_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 400px;
+    border-radius: 20px;
+}
+
+/* -------------------------------- right div ------------------------------------- */
+
+/* right div  - row 1 - product title */
+.right_div {
+    width: 50%;
+    margin: 0px 10px;
+    margin-left: 25px;
+}
+
+.right_div_row1_name {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_div_row1_name_txt {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.right_div_row1_name_btn {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* right div - row 2 - price row  */
+
+.right_div_row2_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.right_div_row2_price {
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.right_div_row2_btn {
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 1px 5px;
+    text-align: center;
+    font-size: small;
+}
+
+.right_div_row2_txt {
+    font-size: smaller;
+    font-weight: 200;
+}
+
+/*  right div - row 3 - shades  */
+
+.right_div_row3_shades_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.right_div_row3_shades_wrapper_btn {
+    background-color: brown;
+    padding: 1px;
+    height: 45px;
+    width: 45px;
+    margin: 15px 7px;
+    border-radius: 10px;
+}
+
+.right_div_row3_shades_wrapper_btn:hover {
+    background-color: brown;
+    padding: 1px;
+    margin: 15px 7px;
+    height: 45px;
+    width: 45px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* right div - row 4 - offer row  */
+
+.right_div_row4_offers_wrapper {
+    margin-top: 15px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+    text-align: left;
+}
+
+.right_div_row4_offers_wrapper_txt {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.right_div_row4_offers_wrapper_list {
+    text-align: left;
+    margin-left: 37px;
+    font-size: 15px;
+}
+
+.right_div_row4_offers_wrapper_list > li {
+    margin-bottom: 15px;
+}
+
+.right_div_row4_offers_wrapper_list > li > span {
+    font-weight: 600;
+    text-decoration-line: underline;
+    cursor: grabbing;
+}
+
+/* row 5 - cart button and wishlist button  */
+
+.right_div_row5_cart_wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.right_div_row5_cart_wishlist_btn {
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_div_row5_cart_addtocart_btn {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto 10px;
+    padding: 10px 25px;
+    font-size: larger;
+}
+
+hr {
+    border-top: 1.5px dotted black;
+}
+
+/* row 6 - delivery pincode row  */
+
+.right_div_row6_pincode_wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right_div_row6_pincode_inputbox {
+    margin-right: 10px;
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.right_div_row6_pincode_btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+/* row 7 - delivery input box row  */
+
+.right_div_row7_features_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(247, 247, 247);
+    margin-top: 30px;
+    border-top: dashed thin black;
+    border-bottom: dashed thin black;
+    height: 50px;
+}
+
+.right_div_row7_features_btn {
+    display: flex;
+    margin: auto 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.right_div_row7_features_btn > span {
+    margin-left: 8px;
+    font-size: small;
+}
+
+/* row 8 - hidden dropdown content div */
+
+.right_div_row8_text_wrapper {
+    margin-top: 20p;
+}
+
+.right_div_row8_text_description,
+.right_div_row8_text_howtoapply,
+.right_div_row8_text_ingredients,
+.right_div_row8_text_faq,
+.right_div_row8_text_review {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: 600;
+}
+
+/* details > summary {
+    list-style-type: "▶️";
+}
+
+details[open] > summary {
+    list-style-type: "🔽";
+} */
+
+.right_div_row8_text_description_content {
+    text-align: left;
+    font-size: 0.9rem;
+    margin: 15px 10px;
+}
+
+.right_div_row8_text_howtoapply_content {
+    text-align: left;
+    font-size: 0.9rem;
+    margin: 15px 40px;
+}
+
+.right_div_row8_text_ingredient_content {
+    text-align: left;
+    font-size: 0.9rem;
+    margin: 15px 10px;
+}
+
+.right_div_row8_text_faq_content {
+    text-align: left;
+    font-size: 0.9rem;
+    margin: 15px 10px;
+}
+/* recommended products - main div down */
+
+/* 
+.down_div_recommended_products_bgwrapper {
+    margin: 30px auto;
+    background-image: url("https://in.sugarcosmetics.com/desc-images/Rectangle_background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.down_div_stayintouch_heading {
+    margin: 50px auto 5px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+}
+
+.line_in_the_middle {
+    background: black;
+    height: 2px;
+    width: 15%;
+}
+
+.down_div_stayintouch_tagline {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.down_div_stayintouch_txt {
+    margin: 10px auto 30px auto;
+}
+
+.down_div_stayintouch_inputbox {
+    margin: auto;
+    padding: 5px;
+}
+
+.down_div_stayintouch_inputbox > input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 45px;
+    border: thin black solid;
+    padding: 5px;
+    width: 35%;
+}
+
+.down_div_stayintouch_inputbox > button {
+    background-color: black;
+    color: white;
+    height: 45px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px 40px;
+} */

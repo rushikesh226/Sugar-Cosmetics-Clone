@@ -1,0 +1,814 @@
+{
+    "posts": [
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg%3Fv%3D1644394232&w=256&q=75",
+            "title": "Matt As Hell Crayon Lipstick",
+            "shades": 32,
+            "price": "849",
+            "rating": 4.8,
+            "reviews": 645
+        },
+        {
+            "image": "https://cdn.shopify.com/s/files/1/0906/2558/products/01_0363dd69-2491-44f9-b93e-3f8fd1bf47c6.jpg?v=1640964864",
+            "title": "Matte As Hell Crayon Lipstick - 11 Elle Woods (Brown Nude)",
+            "shades": 12,
+            "price": "849",
+            "rating": 4.2,
+            "reviews": 1
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg%3Fv%3D1645608270&w=256&q=75",
+            "title": "Matt Attack Transfer Proof Lipstick",
+            "shades": 17,
+            "price": "749",
+            "rating": 4.7,
+            "reviews": 393
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FMah-with-sharpener-02.jpg%3Fv%3D1657294373&w=256&q=75",
+            "title": "05 Rose Dawson (Rose Pink)",
+            "shades": "",
+            "price": "849",
+            "rating": 4.5,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg%3Fv%3D1644325813&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick",
+            "shades": 47,
+            "price": "499",
+            "rating": 4.8,
+            "reviews": 765
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_6a73f7e4-aafa-4368-949a-85a5be6253e3.jpg%3Fv%3D1644594082&w=256&q=75",
+            "title": "Midtoned Peach with hints of red & brown",
+            "shades": 12,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_9fcb1b5b-3169-4097-8bda-6eb9ad94798d.jpg%3Fv%3D1644593942&w=256&q=75",
+            "title": "03 The Grandberries (Dark Berry)",
+            "shades": 32,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 48
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_fbfa80fc-ca34-4cee-8131-1fe4be9c2361.jpg%3Fv%3D1644593987&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 05 Tan Halen (Chocolate Brown)",
+            "shades": 32,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 52
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_7db669dd-9541-4d04-ad5b-49653474339d.jpg%3Fv%3D1640792033&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 01 Scarlett O'Hara (Red)",
+            "shades": 32,
+            "price": "849",
+            "rating": 5.0,
+            "reviews": 2
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_7db669dd-9541-4d04-ad5b-49653474339d.jpg%3Fv%3D1640792033&w=256&q=75",
+            "title": "01 Scarlett O'Hara (Red)",
+            "shades": 32,
+            "price": "849",
+            "rating": 5,
+            "reviews": 2
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_bf17a76c-096c-47c4-ab6a-113c04b43213.jpg%3Fv%3D1644593898&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 01 Boldplay (Cardinal Pink)",
+            "shades": 32,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 52
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_214f6966-9624-40b6-93b8-7ce54555ec70.jpg%3Fv%3D1644594106&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 06 Spring Crimson (Crimson Red)",
+            "shades": 32,
+            "price": "699",
+            "rating": 4.4,
+            "reviews": 18
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-25-very-mulberry-deep-berry-15384232394835.jpg%3Fv%3D1619103527&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 25 Very Mulberry (Deep Berry)",
+            "shades": 32,
+            "price": "499",
+            "rating": 4.9,
+            "reviews": 17
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_bfd85cda-3467-4278-a7b8-91aeecec24bf.jpg%3Fv%3D1640964815&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 07 Viola (Mauve Nude)",
+            "shades": 12,
+            "price": "849",
+            "rating": 4.8,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_f610db97-9f96-4b76-8d31-279c1b7f73aa.jpg%3Fv%3D1644593964&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 04 Maroon Vibe (Dark Red)",
+            "shades": 11,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 38
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_8b62522a-8cc2-458e-9e81-64870a3e976d.jpg%3Fv%3D1640964849&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 10 Cherry Darling (Cherry Red)",
+            "shades": 32,
+            "price": "849",
+            "rating": 5.0,
+            "reviews": 1
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_b28ab497-c9c0-4209-99c7-72c936aebcb3.jpg%3Fv%3D1644594435&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 14 Caffeine Bandit (Chocolate Brown)",
+            "shades": 1,
+            "price": "749",
+            "rating": 4.3,
+            "reviews": 8
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_22b5708d-a5f5-4a6e-b82e-37c016db617a.jpg%3Fv%3D1644594482&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 17 Grateful Red (Bluish Red, Cool Toned Red)",
+            "shades": 3,
+            "price": "749",
+            "rating": 4.5,
+            "reviews": 42
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_75351242-28e2-4d7b-b3ef-b86cec216471.jpg%3Fv%3D1640964934&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 15 Stephanie Plum (Plum Mauve)",
+            "shades": 2,
+            "price": "849",
+            "rating": 4.1,
+            "reviews": 6
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-01-brazen-raisin-burgundy-28190640013395.jpg%3Fv%3D1619100870&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 01 Brazen Raisin (Burgundy)",
+            "shades": 32,
+            "price": "449",
+            "rating": 4.8,
+            "reviews": 91
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-08-wine-and-shine-sangria-28190660788307.jpg%3Fv%3D1619100972&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 08 Wine And Shine (Sangria)",
+            "shades": 32,
+            "price": "449",
+            "rating": 4.8,
+            "reviews": 18
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-09-suave-mauve-mauve-28190664097875.jpg%3Fv%3D1619100986&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 09 Suave Mauve (Mauve)",
+            "shades": 32,
+            "price": "499",
+            "rating": 4.7,
+            "reviews": 19
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_47b1e091-bc67-4502-b36d-0fd0f5e7086e.jpg%3Fv%3D1640965415&w=256&q=75",
+            "title": "Matt As Hell Crayon Lipstick",
+            "shades": 32,
+            "price": "849",
+            "rating": 4.8,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_856db22d-9d17-4ed4-b35d-ad0bb0586169.jpg%3Fv%3D1640965381&w=256&q=75",
+            "title": "Matt As Hell Crayon Lipstick",
+            "shades": 7,
+            "price": "749",
+            "rating": 4.6,
+            "reviews": 22
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_063ee877-bc35-4df0-94ff-ff6300a7639c.jpg%3Fv%3D1640964904&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 13 Murphy Brown (Chocolate Burgundy)",
+            "shades": 32,
+            "price": "799",
+            "rating": 4.2,
+            "reviews": 25
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_da81eed3-37c9-4942-bfaf-2e48c01bec66.jpg%3Fv%3D1640792050&w=256&q=75",
+            "title": "Matt As Hell Crayon Lipstick",
+            "shades": 2,
+            "price": "799",
+            "rating": 4.8,
+            "reviews": 146
+        }
+    ],
+    "htl": [
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg%3Fv%3D1644394232&w=256&q=75",
+            "title": "Matt As Hell Crayon Lipstick",
+            "shades": 32,
+            "price": "849",
+            "rating": 4.8,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_47b1e091-bc67-4502-b36d-0fd0f5e7086e.jpg%3Fv%3D1640965415&w=256&q=75",
+            "title": "Matt As Hell Crayon Lipstick",
+            "shades": 32,
+            "price": "849",
+            "rating": 4.8,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FMah-with-sharpener-02.jpg%3Fv%3D1657294373&w=256&q=75",
+            "title": "05 Rose Dawson (Rose Pink)",
+            "shades": 2,
+            "price": "849",
+            "rating": 4.5,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_7db669dd-9541-4d04-ad5b-49653474339d.jpg%3Fv%3D1640792033&w=256&q=75",
+            "title": "01 Scarlett O'Hara (Red)",
+            "shades": 32,
+            "price": "849",
+            "rating": 5,
+            "reviews": 2
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_bfd85cda-3467-4278-a7b8-91aeecec24bf.jpg%3Fv%3D1640964815&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 07 Viola (Mauve Nude)",
+            "shades": 12,
+            "price": "849",
+            "rating": 4.8,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_75351242-28e2-4d7b-b3ef-b86cec216471.jpg%3Fv%3D1640964934&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 15 Stephanie Plum (Plum Mauve)",
+            "shades": 2,
+            "price": "849",
+            "rating": 4.1,
+            "reviews": 6
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_7db669dd-9541-4d04-ad5b-49653474339d.jpg%3Fv%3D1640792033&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 01 Scarlett O'Hara (Red)",
+            "shades": 32,
+            "price": "849",
+            "rating": 5.0,
+            "reviews": 2
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_8b62522a-8cc2-458e-9e81-64870a3e976d.jpg%3Fv%3D1640964849&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 10 Cherry Darling (Cherry Red)",
+            "shades": 32,
+            "price": "849",
+            "rating": 5.0,
+            "reviews": 1
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_063ee877-bc35-4df0-94ff-ff6300a7639c.jpg%3Fv%3D1640964904&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 13 Murphy Brown (Chocolate Burgundy)",
+            "shades": 32,
+            "price": "799",
+            "rating": 4.2,
+            "reviews": 25
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_da81eed3-37c9-4942-bfaf-2e48c01bec66.jpg%3Fv%3D1640792050&w=256&q=75",
+            "title": "Matt As Hell Crayon Lipstick",
+            "shades": 2,
+            "price": "799",
+            "rating": 4.8,
+            "reviews": 146
+        },
+
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_856db22d-9d17-4ed4-b35d-ad0bb0586169.jpg%3Fv%3D1640965381&w=256&q=75",
+            "title": "Matt As Hell Crayon Lipstick",
+            "shades": 7,
+            "price": "749",
+            "rating": 4.6,
+            "reviews": 22
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg%3Fv%3D1645608270&w=256&q=75",
+            "title": "Matt Attack Transfer Proof Lipstick",
+            "shades": 17,
+            "price": "749",
+            "rating": 4.7,
+            "reviews": 393
+        },
+
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_6a73f7e4-aafa-4368-949a-85a5be6253e3.jpg%3Fv%3D1644594082&w=256&q=75",
+            "title": "Midtoned Peach with hints of red & brown",
+            "shades": 12,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_f610db97-9f96-4b76-8d31-279c1b7f73aa.jpg%3Fv%3D1644593964&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 04 Maroon Vibe (Dark Red)",
+            "shades": 11,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 38
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_9fcb1b5b-3169-4097-8bda-6eb9ad94798d.jpg%3Fv%3D1644593942&w=256&q=75",
+            "title": "03 The Grandberries (Dark Berry)",
+            "shades": 32,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 48
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_fbfa80fc-ca34-4cee-8131-1fe4be9c2361.jpg%3Fv%3D1644593987&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 05 Tan Halen (Chocolate Brown)",
+            "shades": 32,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 52
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_b28ab497-c9c0-4209-99c7-72c936aebcb3.jpg%3Fv%3D1644594435&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 14 Caffeine Bandit (Chocolate Brown)",
+            "shades": 1,
+            "price": "749",
+            "rating": 4.3,
+            "reviews": 8
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_22b5708d-a5f5-4a6e-b82e-37c016db617a.jpg%3Fv%3D1644594482&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 17 Grateful Red (Bluish Red, Cool Toned Red)",
+            "shades": 3,
+            "price": "749",
+            "rating": 4.5,
+            "reviews": 42
+        },
+
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_bf17a76c-096c-47c4-ab6a-113c04b43213.jpg%3Fv%3D1644593898&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 01 Boldplay (Cardinal Pink)",
+            "shades": 32,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 52
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_214f6966-9624-40b6-93b8-7ce54555ec70.jpg%3Fv%3D1644594106&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 06 Spring Crimson (Crimson Red)",
+            "shades": 32,
+            "price": "699",
+            "rating": 4.4,
+            "reviews": 18
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-25-very-mulberry-deep-berry-15384232394835.jpg%3Fv%3D1619103527&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 25 Very Mulberry (Deep Berry)",
+            "shades": 32,
+            "price": "499",
+            "rating": 4.9,
+            "reviews": 17
+        },
+
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-09-suave-mauve-mauve-28190664097875.jpg%3Fv%3D1619100986&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 09 Suave Mauve (Mauve)",
+            "shades": 32,
+            "price": "499",
+            "rating": 4.7,
+            "reviews": 19
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg%3Fv%3D1644325813&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick",
+            "shades": 47,
+            "price": "499",
+            "rating": 4.8,
+            "reviews": 765
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-01-brazen-raisin-burgundy-28190640013395.jpg%3Fv%3D1619100870&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 01 Brazen Raisin (Burgundy)",
+            "shades": 32,
+            "price": "449",
+            "rating": 4.8,
+            "reviews": 91
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-08-wine-and-shine-sangria-28190660788307.jpg%3Fv%3D1619100972&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 08 Wine And Shine (Sangria)",
+            "shades": 32,
+            "price": "449",
+            "rating": 4.8,
+            "reviews": 18
+        }
+    ],
+    "lth": [
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-01-brazen-raisin-burgundy-28190640013395.jpg%3Fv%3D1619100870&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 01 Brazen Raisin (Burgundy)",
+            "shades": 32,
+            "price": "449",
+            "rating": 4.8,
+            "reviews": 91
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-08-wine-and-shine-sangria-28190660788307.jpg%3Fv%3D1619100972&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 08 Wine And Shine (Sangria)",
+            "shades": 32,
+            "price": "449",
+            "rating": 4.8,
+            "reviews": 18
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-25-very-mulberry-deep-berry-15384232394835.jpg%3Fv%3D1619103527&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 25 Very Mulberry (Deep Berry)",
+            "shades": 32,
+            "price": "499",
+            "rating": 4.9,
+            "reviews": 17
+        },
+
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-09-suave-mauve-mauve-28190664097875.jpg%3Fv%3D1619100986&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 09 Suave Mauve (Mauve)",
+            "shades": 32,
+            "price": "499",
+            "rating": 4.7,
+            "reviews": 19
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg%3Fv%3D1644325813&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick",
+            "shades": 47,
+            "price": "499",
+            "rating": 4.8,
+            "reviews": 765
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_214f6966-9624-40b6-93b8-7ce54555ec70.jpg%3Fv%3D1644594106&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 06 Spring Crimson (Crimson Red)",
+            "shades": 32,
+            "price": "699",
+            "rating": 4.4,
+            "reviews": 18
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_856db22d-9d17-4ed4-b35d-ad0bb0586169.jpg%3Fv%3D1640965381&w=256&q=75",
+            "title": "Matt As Hell Crayon Lipstick",
+            "shades": 7,
+            "price": "749",
+            "rating": 4.6,
+            "reviews": 22
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg%3Fv%3D1645608270&w=256&q=75",
+            "title": "Matt Attack Transfer Proof Lipstick",
+            "shades": 17,
+            "price": "749",
+            "rating": 4.7,
+            "reviews": 393
+        },
+
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_6a73f7e4-aafa-4368-949a-85a5be6253e3.jpg%3Fv%3D1644594082&w=256&q=75",
+            "title": "Midtoned Peach with hints of red & brown",
+            "shades": 12,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_f610db97-9f96-4b76-8d31-279c1b7f73aa.jpg%3Fv%3D1644593964&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 04 Maroon Vibe (Dark Red)",
+            "shades": 11,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 38
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_9fcb1b5b-3169-4097-8bda-6eb9ad94798d.jpg%3Fv%3D1644593942&w=256&q=75",
+            "title": "03 The Grandberries (Dark Berry)",
+            "shades": 32,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 48
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_fbfa80fc-ca34-4cee-8131-1fe4be9c2361.jpg%3Fv%3D1644593987&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 05 Tan Halen (Chocolate Brown)",
+            "shades": 32,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 52
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_b28ab497-c9c0-4209-99c7-72c936aebcb3.jpg%3Fv%3D1644594435&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 14 Caffeine Bandit (Chocolate Brown)",
+            "shades": 1,
+            "price": "749",
+            "rating": 4.3,
+            "reviews": 8
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_22b5708d-a5f5-4a6e-b82e-37c016db617a.jpg%3Fv%3D1644594482&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 17 Grateful Red (Bluish Red, Cool Toned Red)",
+            "shades": 3,
+            "price": "749",
+            "rating": 4.5,
+            "reviews": 42
+        },
+
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_bf17a76c-096c-47c4-ab6a-113c04b43213.jpg%3Fv%3D1644593898&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 01 Boldplay (Cardinal Pink)",
+            "shades": 32,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 52
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_063ee877-bc35-4df0-94ff-ff6300a7639c.jpg%3Fv%3D1640964904&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 13 Murphy Brown (Chocolate Burgundy)",
+            "shades": 32,
+            "price": "799",
+            "rating": 4.2,
+            "reviews": 25
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_da81eed3-37c9-4942-bfaf-2e48c01bec66.jpg%3Fv%3D1640792050&w=256&q=75",
+            "title": "Matt As Hell Crayon Lipstick",
+            "shades": 2,
+            "price": "799",
+            "rating": 4.8,
+            "reviews": 146
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg%3Fv%3D1644394232&w=256&q=75",
+            "title": "Matt As Hell Crayon Lipstick",
+            "shades": 32,
+            "price": "839",
+            "rating": 4.8,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_47b1e091-bc67-4502-b36d-0fd0f5e7086e.jpg%3Fv%3D1640965415&w=256&q=75",
+            "title": "Matt As Hell Crayon Lipstick",
+            "shades": 32,
+            "price": "849",
+            "rating": 4.8,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FMah-with-sharpener-02.jpg%3Fv%3D1657294373&w=256&q=75",
+            "title": "05 Rose Dawson (Rose Pink)",
+            "shades": 2,
+            "price": "849",
+            "rating": 4.5,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_7db669dd-9541-4d04-ad5b-49653474339d.jpg%3Fv%3D1640792033&w=256&q=75",
+            "title": "01 Scarlett O'Hara (Red)",
+            "shades": 32,
+            "price": "849",
+            "rating": 5,
+            "reviews": 2
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_bfd85cda-3467-4278-a7b8-91aeecec24bf.jpg%3Fv%3D1640964815&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 07 Viola (Mauve Nude)",
+            "shades": 12,
+            "price": "849",
+            "rating": 4.8,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_75351242-28e2-4d7b-b3ef-b86cec216471.jpg%3Fv%3D1640964934&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 15 Stephanie Plum (Plum Mauve)",
+            "shades": 2,
+            "price": "849",
+            "rating": 4.1,
+            "reviews": 6
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_7db669dd-9541-4d04-ad5b-49653474339d.jpg%3Fv%3D1640792033&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 01 Scarlett O'Hara (Red)",
+            "shades": 32,
+            "price": "899",
+            "rating": 5.0,
+            "reviews": 2
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_8b62522a-8cc2-458e-9e81-64870a3e976d.jpg%3Fv%3D1640964849&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 10 Cherry Darling (Cherry Red)",
+            "shades": 32,
+            "price": "899",
+            "rating": 5.0,
+            "reviews": 1
+        }
+    ],
+    "matteLips": [
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg%3Fv%3D1645608270&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick",
+            "shades": 17,
+            "price": "749",
+            "rating": 4.7,
+            "reviews": 393
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_bf17a76c-096c-47c4-ab6a-113c04b43213.jpg%3Fv%3D1644593898&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 01 Boldplay (Cardinal Pink)",
+            "shades": 17,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 52
+        }
+    ],
+    "liquidLips": [
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-01-brazen-raisin-burgundy-28190640013395.jpg%3Fv%3D1619100870&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 01 Brazen Raisin (Burgundy)",
+            "shades": 32,
+            "price": "449",
+            "rating": 4.8,
+            "reviews": 91
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-08-wine-and-shine-sangria-28190660788307.jpg%3Fv%3D1619100972&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 08 Wine And Shine (Sangria)",
+            "shades": 32,
+            "price": "449",
+            "rating": 4.8,
+            "reviews": 18
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-25-very-mulberry-deep-berry-15384232394835.jpg%3Fv%3D1619103527&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 25 Very Mulberry (Deep Berry)",
+            "shades": 32,
+            "price": "499",
+            "rating": 4.9,
+            "reviews": 17
+        },
+
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-09-suave-mauve-mauve-28190664097875.jpg%3Fv%3D1619100986&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 09 Suave Mauve (Mauve)",
+            "shades": 32,
+            "price": "499",
+            "rating": 4.7,
+            "reviews": 19
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg%3Fv%3D1644325813&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick",
+            "shades": 47,
+            "price": "499",
+            "rating": 4.8,
+            "reviews": 765
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_214f6966-9624-40b6-93b8-7ce54555ec70.jpg%3Fv%3D1644594106&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 06 Spring Crimson (Crimson Red)",
+            "shades": 32,
+            "price": "699",
+            "rating": 4.4,
+            "reviews": 18
+        }
+    ],
+    "crayonLips": [
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg%3Fv%3D1644394232&w=256&q=75",
+            "title": "Matt As Hell Crayon Lipstick",
+            "shades": 32,
+            "price": "849",
+            "rating": 4.8,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg%3Fv%3D1645608270&w=256&q=75",
+            "title": "Matt Attack Transfer Proof Lipstick",
+            "shades": 17,
+            "price": "749",
+            "rating": 4.7,
+            "reviews": 393
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FMah-with-sharpener-02.jpg%3Fv%3D1657294373&w=256&q=75",
+            "title": "05 Rose Dawson (Rose Pink)",
+            "shades": 3,
+            "price": "849",
+            "rating": 4.5,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_fbfa80fc-ca34-4cee-8131-1fe4be9c2361.jpg%3Fv%3D1644593987&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 05 Tan Halen (Chocolate Brown)",
+            "shades": 32,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 52
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_7db669dd-9541-4d04-ad5b-49653474339d.jpg%3Fv%3D1640792033&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 01 Scarlett O'Hara (Red)",
+            "shades": 32,
+            "price": "849",
+            "rating": 5.0,
+            "reviews": 2
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_bf17a76c-096c-47c4-ab6a-113c04b43213.jpg%3Fv%3D1644593898&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 01 Boldplay (Cardinal Pink)",
+            "shades": 32,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 52
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_214f6966-9624-40b6-93b8-7ce54555ec70.jpg%3Fv%3D1644594106&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 10 Depeach Mode (Peach)",
+            "shades": 2,
+            "price": "699",
+            "rating": 4.4,
+            "reviews": 18
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_214f6966-9624-40b6-93b8-7ce54555ec70.jpg%3Fv%3D1644594106&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 06 Spring Crimson (Crimson Red)",
+            "shades": 32,
+            "price": "699",
+            "rating": 4.4,
+            "reviews": 18
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-smudge-me-not-liquid-lipstick-25-very-mulberry-deep-berry-15384232394835.jpg%3Fv%3D1619103527&w=256&q=75",
+            "title": "Smudge Me Not Liquid Lipstick - 25 Very Mulberry (Deep Berry)",
+            "shades": 32,
+            "price": "499",
+            "rating": 4.9,
+            "reviews": 17
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_bfd85cda-3467-4278-a7b8-91aeecec24bf.jpg%3Fv%3D1640964815&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 07 Viola (Mauve Nude)",
+            "shades": 12,
+            "price": "849",
+            "rating": 4.8,
+            "reviews": 645
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_f610db97-9f96-4b76-8d31-279c1b7f73aa.jpg%3Fv%3D1644593964&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 04 Maroon Vibe (Dark Red)",
+            "shades": 11,
+            "price": "749",
+            "rating": 4.8,
+            "reviews": 38
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_b28ab497-c9c0-4209-99c7-72c936aebcb3.jpg%3Fv%3D1644594435&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 14 Caffeine Bandit (Chocolate Brown)",
+            "shades": 1,
+            "price": "749",
+            "rating": 4.3,
+            "reviews": 8
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_8b62522a-8cc2-458e-9e81-64870a3e976d.jpg%3Fv%3D1640964849&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 10 Cherry Darling (Cherry Red)",
+            "shades": 32,
+            "price": "849",
+            "rating": 5.0,
+            "reviews": 1
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F1_22b5708d-a5f5-4a6e-b82e-37c016db617a.jpg%3Fv%3D1644594482&w=256&q=75",
+            "title": "Matte Attack Transferproof Lipstick - 17 Grateful Red (Bluish Red, Cool Toned Red)",
+            "shades": 3,
+            "price": "749",
+            "rating": 4.5,
+            "reviews": 42
+        },
+        {
+            "image": "https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F01_75351242-28e2-4d7b-b3ef-b86cec216471.jpg%3Fv%3D1640964934&w=256&q=75",
+            "title": "Matte As Hell Crayon Lipstick - 15 Stephanie Plum (Plum Mauve)",
+            "shades": 2,
+            "price": "849",
+            "rating": 4.1,
+            "reviews": 6
+        }
+    ]
+}
