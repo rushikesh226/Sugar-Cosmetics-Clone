@@ -1,17 +1,19 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import {useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import { addToCart } from "../../Redux/action";
+import { useNavigate } from "react-router-dom";
 function ProductCard({ image, title, price, rating, reviews, shades }) {
-  const cartObj={
+  const navigate = useNavigate();
+  const cartObj = {
     image,
     title,
     price,
     rating,
     reviews,
-    shades
-  }
-  const dispatch=useDispatch();
+    shades,
+  };
+  const dispatch = useDispatch();
   const productAddToCart = () => {
     dispatch(addToCart(cartObj));
   };
@@ -24,10 +26,10 @@ function ProductCard({ image, title, price, rating, reviews, shades }) {
         padding: "20px",
         backgroundColor: "white",
         borderRadius: "10px",
-        boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"
+        boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
       }}
     >
-      <Box paddingLeft="50px">
+      <Box paddingLeft="50px" cursor={"pointer"}>
         <img
           src={image}
           alt="ProductImage"
@@ -35,6 +37,7 @@ function ProductCard({ image, title, price, rating, reviews, shades }) {
           display="inline-block"
           height={"222px"}
           border-radius="12px"
+          onClick={() => navigate("/individualPage")}
         />
       </Box>
       <Box>
