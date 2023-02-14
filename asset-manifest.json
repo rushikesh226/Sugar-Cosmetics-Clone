@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/construct-week-3/static/css/main.6c7e9b36.css",
+    "main.js": "/construct-week-3/static/js/main.2c5b877c.js",
+    "static/js/787.95ac024f.chunk.js": "/construct-week-3/static/js/787.95ac024f.chunk.js",
+    "index.html": "/construct-week-3/index.html",
+    "main.6c7e9b36.css.map": "/construct-week-3/static/css/main.6c7e9b36.css.map",
+    "main.2c5b877c.js.map": "/construct-week-3/static/js/main.2c5b877c.js.map",
+    "787.95ac024f.chunk.js.map": "/construct-week-3/static/js/787.95ac024f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c7e9b36.css",
+    "static/js/main.2c5b877c.js"
+  ]
+}
