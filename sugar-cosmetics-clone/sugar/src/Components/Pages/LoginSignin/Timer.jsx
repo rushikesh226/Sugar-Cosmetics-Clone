@@ -1,15 +1,7 @@
 import React from 'react'
-// import useCountDown from './useCountDown';
 
-
-const Timer = () => {
-  
+export const Timer = () => {
   return (
-    <>
-   {/* {sec} */}
-
-    </>
+    <div>Timer</div>
   )
 }
-
-export default Timer
