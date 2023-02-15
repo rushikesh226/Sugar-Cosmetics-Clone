@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Otp.module.css";
-import Timer from "./Timer";
+import {Timer} from "./Timer";
 import LoginOtp from "./LoginOtp";
 import {
     Button,

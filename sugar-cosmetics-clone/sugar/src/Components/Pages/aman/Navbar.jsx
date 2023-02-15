@@ -25,10 +25,8 @@ let Navbar = () => {
         return store.cartReducer.cart.length;
     });
 
-    console.log(loginPlaceholder, "<- --------- this ");
     useEffect(() => {
-        //yo
-        if (username == undefined || username == "" || username == null)
+        if (username === undefined || username === "" || username === null)
             setLoginPlaceholder("Login/Register");
         else setLoginPlaceholder(` Welcome ! ${username} `);
     }, [username]);

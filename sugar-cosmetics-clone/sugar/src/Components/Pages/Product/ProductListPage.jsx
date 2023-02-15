@@ -4,24 +4,24 @@ import { useState } from "react";
 import { SortContext } from "../../Context/SortContext";
 import Filters from "./Filters";
 import ProductCard from "./ProductCard";
-import jsonData from "../../../db.json";
 function ProductListPage() {
-  console.log(jsonData);
   const [data, setData] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const { sort } = useContext(SortContext);
+  const { sort, loading, handleLoading } = useContext(SortContext);
   useEffect(() => {
     getData();
   }, [sort]);
   const getData = () => {
-    setIsLoading(true);
+    handleLoading(true);
     fetch(`https://sugar-cosmetics-server-json.onrender.com/${sort}`)
       .then((res) => res.json())
       .then((data) => {
         setData(data);
-        setIsLoading(false);
+        handleLoading(false);
       });
   };
+  if (loading) {
+    return <h1>...Loading</h1>;
+  }
   return (
     <Box
       display={"flex"}
