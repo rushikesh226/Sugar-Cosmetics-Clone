@@ -13,6 +13,14 @@ function ProductCard({ image, title, price, rating, reviews, shades }) {
     reviews,
     shades,
   };
+  const wishlistObj = {
+    image,
+    title,
+    price,
+    rating,
+    reviews,
+    shades,
+  };
   const [cartText, setCartText] = useState("ADD TO CART");
   const [cartColor, setCartColor] = useState("black");
   const toast = useToast();
@@ -29,14 +37,13 @@ function ProductCard({ image, title, price, rating, reviews, shades }) {
     setCartColor("teal");
   };
   const productAddToWishlist = () => {
-    dispatch(addToWishlist(cartObj));
+    dispatch(addToWishlist(wishlistObj));
     toast({
       title: "Item Added To Wishlist",
       status: "success",
       duration: 3000,
       isClosable: true,
     });
-    
   };
   return (
     <Box
