@@ -18,6 +18,6 @@ end point page
 	total
 
 wishlist page 
-	show wishlisted products 
+	show wishlisted products --->Add to wishlist by using redux store done!
 	 
 	
