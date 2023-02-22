@@ -1,7 +1,7 @@
 import { Button, useToast } from "@chakra-ui/react";
 
 function CartToast() {
-    const toast = useToast()
+    const toast = useToast();
     return (
       <Button
         onClick={() =>
